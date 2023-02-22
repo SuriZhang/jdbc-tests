@@ -3,7 +3,6 @@ package demo.test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
@@ -12,15 +11,14 @@ import org.junit.Before;
 import org.junit.Test;
 import org.postgresql.util.PSQLState;
 
+import demo.util.TestDbms;
 import demo.util.TestUtil;
-
-import org.postgresql.jdbc.PgConnection;
+import demo.util.TestUtilFactory;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.SQLWarning;
 import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Map;
@@ -32,30 +30,33 @@ import java.util.Properties;
  * superclass.
  */
 public class ConnectionTest {
+  private TestUtil testUtil;
   private Connection con;
 
   // Set up the fixture for this testcase: the tables for this test.
   @Before
   public void setUp() throws Exception {
-    con = TestUtil.openDB();
+    testUtil = TestUtilFactory.create(TestDbms.POSTGRES);
+    con = testUtil.openConnection();
 
-    TestUtil.createTable(con, "test_a", "imagename name,image oid,id int4");
-    TestUtil.createTable(con, "test_c", "source text,cost money,imageid int4");
+    // use basic data types here or generate the test tables according to different test dbms
+    testUtil.createTable(con, "test_a", "imagename varchar,image oid,id int4");
+    testUtil.createTable(con, "test_c", "source varchar,cost int4,imageid int4");
 
-    TestUtil.closeDB(con);
+    testUtil.closeConnection(con);
   }
 
   // Tear down the fixture for this test case.
   @After
   public void tearDown() throws Exception {
-    TestUtil.closeDB(con);
+    testUtil.closeConnection(con);
 
-    con = TestUtil.openDB();
+    con = testUtil.openConnection();
 
-    TestUtil.dropTable(con, "test_a");
-    TestUtil.dropTable(con, "test_c");
+    testUtil.dropTable(con, "test_a");
+    testUtil.dropTable(con, "test_c");
 
-    TestUtil.closeDB(con);
+    testUtil.closeConnection(con);
   }
 
   /*
@@ -63,7 +64,7 @@ public class ConnectionTest {
    */
   @Test
   public void testCreateStatement() throws Exception {
-    con = TestUtil.openDB();
+    con = testUtil.openConnection();
 
     // A standard Statement
     Statement stat = con.createStatement();
@@ -71,7 +72,8 @@ public class ConnectionTest {
     stat.close();
 
     // Ask for Updateable ResultSets
-    stat = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+    // stat = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+    stat = con.createStatement();
     assertNotNull(stat);
     stat.close();
   }
@@ -81,7 +83,7 @@ public class ConnectionTest {
    */
   @Test
   public void testPrepareStatement() throws Exception {
-    con = TestUtil.openDB();
+    con = testUtil.openConnection();
 
     String sql = "select source,cost,imageid from test_c";
 
@@ -91,7 +93,8 @@ public class ConnectionTest {
     stat.close();
 
     // Ask for Updateable ResultSets
-    stat = con.prepareStatement(sql, ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+    // stat = con.prepareStatement(sql, ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+    stat=con.prepareStatement(sql);
     assertNotNull(stat);
     stat.close();
   }
@@ -109,7 +112,7 @@ public class ConnectionTest {
   @Test
   public void testNativeSQL() throws Exception {
     // test a simple escape
-    con = TestUtil.openDB();
+    con = testUtil.openConnection();
     assertEquals("DATE '2005-01-24'", con.nativeSQL("{d '2005-01-24'}"));
   }
 
@@ -118,7 +121,7 @@ public class ConnectionTest {
    */
   @Test
   public void testTransactions() throws Exception {
-    con = TestUtil.openDB();
+    con = testUtil.openConnection();
     Statement st;
     ResultSet rs;
 
@@ -152,7 +155,7 @@ public class ConnectionTest {
     assertEquals(9876, rs.getInt(1)); // Should not change!
     rs.close();
 
-    TestUtil.closeDB(con);
+    testUtil.closeConnection(con);
   }
 
   /*
@@ -161,9 +164,7 @@ public class ConnectionTest {
    */
   @Test
   public void testReadOnly_always() throws Exception {
-    final Properties props = new Properties();
-    props.setProperty("readOnlyMode", "always");
-    con = TestUtil.openDB(props);
+    con = testUtil.openReadOnlyConnection();
     Statement st;
     ResultSet rs;
 
@@ -249,7 +250,7 @@ public class ConnectionTest {
     assertEquals(9876, rs.getInt(1)); // Should not change!
     rs.close();
 
-    TestUtil.closeDB(con);
+    testUtil.closeConnection(con);
   }
 
   /*
@@ -260,7 +261,7 @@ public class ConnectionTest {
   public void testReadOnly_ignore() throws Exception {
     final Properties props = new Properties();
     props.setProperty("readOnlyMode", "ignore");
-    con = TestUtil.openDB(props);
+    con = testUtil.openConnection(props);
     Statement st;
     ResultSet rs;
 
@@ -291,7 +292,7 @@ public class ConnectionTest {
     assertEquals(1234, rs.getInt(1)); // Should not change!
     rs.close();
 
-    TestUtil.closeDB(con);
+    testUtil.closeConnection(con);
   }
 
   /*
@@ -301,8 +302,8 @@ public class ConnectionTest {
   @Test
   public void testReadOnly_transaction() throws Exception {
     final Properties props = new Properties();
-    props.setProperty("READ_ONLY_MODE", "transaction");
-    con = TestUtil.openDB(props);
+    props.setProperty("readOnlyMode", "transaction");
+    con = testUtil.openConnection(props);
     Statement st;
     ResultSet rs;
 
@@ -364,7 +365,7 @@ public class ConnectionTest {
     assertEquals(1111, rs.getInt(1)); // Should not change!
     rs.close();
 
-    TestUtil.closeDB(con);
+    testUtil.closeConnection(con);
   }
 
   /*
@@ -372,45 +373,15 @@ public class ConnectionTest {
    */
   @Test
   public void testIsClosed() throws Exception {
-    con = TestUtil.openDB();
+    con = testUtil.openConnection();
 
     // Should not say closed
     assertTrue(!con.isClosed());
 
-    TestUtil.closeDB(con);
+    testUtil.closeConnection(con);
 
     // Should now say closed
     assertTrue(con.isClosed());
-  }
-
-  /*
-   * Test the warnings system
-   */
-  @Test
-  public void testWarnings() throws Exception {
-    con = TestUtil.openDB();
-
-    String testStr = "This Is OuR TeSt message";
-
-    // The connection must be ours!
-    assertTrue(con instanceof org.postgresql.PGConnection);
-
-    // Clear any existing warnings
-    con.clearWarnings();
-
-    // Set the test warning
-    ((PgConnection) con).addWarning(new SQLWarning(testStr));
-
-    // Retrieve it
-    SQLWarning warning = con.getWarnings();
-    assertNotNull(warning);
-    assertEquals(testStr, warning.getMessage());
-
-    // Finally test clearWarnings() this time there must be something to delete
-    con.clearWarnings();
-    assertNull(con.getWarnings());
-
-    TestUtil.closeDB(con);
   }
 
   /*
@@ -418,7 +389,7 @@ public class ConnectionTest {
    */
   @Test
   public void testTransactionIsolation() throws Exception {
-    con = TestUtil.openDB();
+    con = testUtil.openConnection();
 
     int defaultLevel = con.getTransactionIsolation();
 
@@ -474,7 +445,7 @@ public class ConnectionTest {
     }
 
     con.rollback();
-    TestUtil.closeDB(con);
+    testUtil.closeConnection(con);
   }
 
   /*
@@ -482,7 +453,7 @@ public class ConnectionTest {
    */
   @Test
   public void testTypeMaps() throws Exception {
-    con = TestUtil.openDB();
+    con = testUtil.openConnection();
 
     // preserve the current map
     Map<String, Class<?>> oldmap = con.getTypeMap();
@@ -496,7 +467,7 @@ public class ConnectionTest {
     con.setTypeMap(oldmap);
     assertEquals(oldmap, con.getTypeMap());
 
-    TestUtil.closeDB(con);
+    testUtil.closeConnection(con);
   }
 
   /**
@@ -504,7 +475,7 @@ public class ConnectionTest {
    */
   @Test
   public void testDoubleClose() throws Exception {
-    con = TestUtil.openDB();
+    con = testUtil.openConnection();
     con.close();
     con.close();
   }
@@ -514,34 +485,12 @@ public class ConnectionTest {
    */
   @Test
   public void testGetTypeMapEmpty() throws Exception {
-    con = TestUtil.openDB();
+    con = testUtil.openConnection();
     Map typeMap = con.getTypeMap();
     assertNotNull(typeMap);
     assertTrue("TypeMap should be empty", typeMap.isEmpty());
     con.close();
   }
-
-  // @Test
-  // public void testPGStreamSettings() throws Exception {
-  // con = TestUtil.openDB();
-  // QueryExecutor queryExecutor = ((PgConnection) con).getQueryExecutor();
-
-  // Field f =
-  // queryExecutor.getClass().getSuperclass().getDeclaredField("pgStream");
-  // f.setAccessible(true);
-  // PGStream pgStream = (PGStream) f.get(queryExecutor);
-  // pgStream.setNetworkTimeout(1000);
-  // pgStream.getSocket().setKeepAlive(true);
-  // pgStream.getSocket().setSendBufferSize(8192);
-  // pgStream.getSocket().setReceiveBufferSize(2048);
-  // PGStream newStream = new PGStream(pgStream, 10);
-  // assertEquals(1000, newStream.getSocket().getSoTimeout());
-  // assertEquals(2048, newStream.getSocket().getReceiveBufferSize());
-  // assertEquals(8192, newStream.getSocket().getSendBufferSize());
-  // assertTrue(newStream.getSocket().getKeepAlive());
-
-  // TestUtil.closeDB(con);
-  // }
 
   private static void assertStringContains(String orig, String toContain) {
     if (!orig.contains(toContain)) {

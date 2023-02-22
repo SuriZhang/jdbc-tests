@@ -1,4 +1,7 @@
 package demo;
+/**
+ * This class this copied from pgjdbc project. Made a copy here to resolve import issue.
+*/
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
