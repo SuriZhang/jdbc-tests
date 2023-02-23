@@ -1,2 +1,3 @@
 /.vscode
 /demo/target
+/demo/src/main/test/java/demo/data/duckdb/
