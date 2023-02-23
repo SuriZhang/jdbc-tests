@@ -1,10 +1,13 @@
 package demo.util;
 
+import java.io.Closeable;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Properties;
 
 import javax.annotation.Nullable;
@@ -87,6 +90,54 @@ public interface TestUtil {
             }
         }
         return p;
+    }
+
+    /**
+     * Close a Statement and ignore any errors during closing.
+     */
+    public static void closeQuietly(@Nullable Statement stmt) {
+        if (stmt != null) {
+            try {
+                stmt.close();
+            } catch (SQLException ignore) {
+            }
+        }
+    }
+
+    /**
+     * Close a ResultSet and ignore any errors during closing.
+     */
+    public static void closeQuietly(@Nullable ResultSet rs) {
+        if (rs != null) {
+            try {
+                rs.close();
+            } catch (SQLException ignore) {
+            }
+        }
+    }
+
+        /**
+     * Close a Connection and ignore any errors during closing.
+     */
+    public static void closeQuietly(@Nullable Connection conn) {
+        if (conn != null) {
+            try {
+                conn.close();
+            } catch (SQLException ignore) {
+            }
+        }
+    }
+
+    /**
+     * Close a resource and ignore any errors during closing.
+     */
+    public static void closeQuietly(@Nullable Closeable resource) {
+        if (resource != null) {
+            try {
+                resource.close();
+            } catch (Exception ignore) {
+            }
+        }
     }
 
 }

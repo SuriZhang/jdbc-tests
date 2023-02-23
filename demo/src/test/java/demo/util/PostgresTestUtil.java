@@ -392,7 +392,7 @@ public final class PostgresTestUtil implements TestUtil {
 
             st.executeUpdate(sql);
         } finally {
-            closeQuietly(st);
+            TestUtil.closeQuietly(st);
         }
     }
 
@@ -419,7 +419,7 @@ public final class PostgresTestUtil implements TestUtil {
 
             st.executeUpdate(sql);
         } finally {
-            closeQuietly(st);
+            TestUtil.closeQuietly(st);
         }
     }
 
@@ -440,7 +440,7 @@ public final class PostgresTestUtil implements TestUtil {
             // Now create the table
             st.executeUpdate("create temp table " + table + " (" + columns + ")");
         } finally {
-            closeQuietly(st);
+            TestUtil.closeQuietly(st);
         }
     }
 
@@ -460,7 +460,7 @@ public final class PostgresTestUtil implements TestUtil {
             // Now create the table
             st.executeUpdate("CREATE " + unlogged + " TABLE " + table + " (" + columns + ")");
         } finally {
-            closeQuietly(st);
+            TestUtil.closeQuietly(st);
         }
     }
 
@@ -511,7 +511,7 @@ public final class PostgresTestUtil implements TestUtil {
             // Now create the table
             st.executeUpdate("create type " + name + " as enum (" + values + ")");
         } finally {
-            closeQuietly(st);
+            TestUtil.closeQuietly(st);
         }
     }
 
@@ -543,7 +543,7 @@ public final class PostgresTestUtil implements TestUtil {
             // Now create the type
             st.executeUpdate("CREATE TYPE " + name + " AS (" + values + ")");
         } finally {
-            closeQuietly(st);
+            TestUtil.closeQuietly(st);
         }
     }
 
@@ -573,7 +573,7 @@ public final class PostgresTestUtil implements TestUtil {
             // Now create the table
             st.executeUpdate("create domain " + name + " as " + values);
         } finally {
-            closeQuietly(st);
+            TestUtil.closeQuietly(st);
         }
     }
 
@@ -623,7 +623,7 @@ public final class PostgresTestUtil implements TestUtil {
 
             st.executeUpdate("create " + type + " " + name + " " + columnsAndOtherStuff);
         } finally {
-            closeQuietly(st);
+            TestUtil.closeQuietly(st);
         }
     }
 
@@ -633,7 +633,7 @@ public final class PostgresTestUtil implements TestUtil {
         try {
             stmt.executeUpdate("CREATE FUNCTION " + name + "(" + arguments + ") " + query + " LANGUAGE SQL");
         } finally {
-            closeQuietly(stmt);
+            TestUtil.closeQuietly(stmt);
         }
     }
 
@@ -657,7 +657,7 @@ public final class PostgresTestUtil implements TestUtil {
                 stmt.executeUpdate("DROP " + type + " " + name + " CASCADE");
             }
         } finally {
-            closeQuietly(stmt);
+            TestUtil.closeQuietly(stmt);
         }
     }
 
@@ -671,8 +671,8 @@ public final class PostgresTestUtil implements TestUtil {
             rs.next();
             assertEquals(message, expectedRows, rs.getInt(1));
         } finally {
-            closeQuietly(rs);
-            closeQuietly(ps);
+            TestUtil.closeQuietly(rs);
+            TestUtil.closeQuietly(ps);
         }
     }
 
@@ -864,54 +864,6 @@ public final class PostgresTestUtil implements TestUtil {
         return returnValue;
     }
 
-    /**
-     * Close a resource and ignore any errors during closing.
-     */
-    public void closeQuietly(@Nullable Closeable resource) {
-        if (resource != null) {
-            try {
-                resource.close();
-            } catch (Exception ignore) {
-            }
-        }
-    }
-
-    /**
-     * Close a Connection and ignore any errors during closing.
-     */
-    public void closeQuietly(@Nullable Connection conn) {
-        if (conn != null) {
-            try {
-                conn.close();
-            } catch (SQLException ignore) {
-            }
-        }
-    }
-
-    /**
-     * Close a Statement and ignore any errors during closing.
-     */
-    public void closeQuietly(@Nullable Statement stmt) {
-        if (stmt != null) {
-            try {
-                stmt.close();
-            } catch (SQLException ignore) {
-            }
-        }
-    }
-
-    /**
-     * Close a ResultSet and ignore any errors during closing.
-     */
-    public void closeQuietly(@Nullable ResultSet rs) {
-        if (rs != null) {
-            try {
-                rs.close();
-            } catch (SQLException ignore) {
-            }
-        }
-    }
-
     public void recreateLogicalReplicationSlot(Connection connection, String slotName, String outputPlugin)
             throws SQLException, InterruptedException, TimeoutException {
         // drop previous slot
@@ -924,7 +876,7 @@ public final class PostgresTestUtil implements TestUtil {
             stm.setString(2, outputPlugin);
             stm.execute();
         } finally {
-            closeQuietly(stm);
+            TestUtil.closeQuietly(stm);
         }
     }
 
@@ -939,7 +891,7 @@ public final class PostgresTestUtil implements TestUtil {
             stm.setString(1, slotName);
             stm.execute();
         } finally {
-            closeQuietly(stm);
+            TestUtil.closeQuietly(stm);
         }
     }
 
@@ -954,7 +906,7 @@ public final class PostgresTestUtil implements TestUtil {
                 stm.setString(1, slotName);
                 stm.execute();
             } finally {
-                closeQuietly(stm);
+                TestUtil.closeQuietly(stm);
             }
         }
 
@@ -968,7 +920,7 @@ public final class PostgresTestUtil implements TestUtil {
             stm.setString(1, slotName);
             stm.execute();
         } finally {
-            closeQuietly(stm);
+            TestUtil.closeQuietly(stm);
         }
     }
 
@@ -983,8 +935,8 @@ public final class PostgresTestUtil implements TestUtil {
             rs = stm.executeQuery();
             return rs.next() && rs.getBoolean(1);
         } finally {
-            closeQuietly(rs);
-            closeQuietly(stm);
+            TestUtil.closeQuietly(rs);
+            TestUtil.closeQuietly(stm);
         }
     }
 

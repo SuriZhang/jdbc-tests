@@ -49,8 +49,6 @@ public final class DuckDbTestUtil implements TestUtil {
         return openConnection();
     }
 
-    
-
     @Override
     public Connection openPriviligedConnection() throws SQLException {
         throw new UnsupportedOperationException("Unimplemented method 'openPriviligedConnection'");
@@ -78,9 +76,10 @@ public final class DuckDbTestUtil implements TestUtil {
         Statement stmt = con.createStatement();
         try {
             dropSchema(con, schema);
-            stmt.executeUpdate("CREATE SCHEMA " + schema);
+            String sql = "CREATE SCHEMA " + schema;
+            stmt.executeUpdate(sql);
         } finally {
-            stmt.close();
+            TestUtil.closeQuietly(stmt);
         }
     }
 
@@ -88,9 +87,10 @@ public final class DuckDbTestUtil implements TestUtil {
     public void dropSchema(Connection con, String schema) throws SQLException {
         Statement stmt = con.createStatement();
         try {
-            stmt.executeUpdate("DROP SCHEMA " + schema);
+            String sql = "DROP SCHEMA IF EXISTS " + schema + " CASCADE";
+            stmt.executeUpdate(sql);
         } finally {
-            stmt.close();
+            TestUtil.closeQuietly(stmt);
         }
     }
 
@@ -98,11 +98,11 @@ public final class DuckDbTestUtil implements TestUtil {
     public void createTable(Connection con, String table, String columns) throws SQLException {
         Statement stmt = con.createStatement();
         try {
-            // dropTable(con, table);
-            stmt.execute("CREATE TABLE " + table + " (" + columns + ")");
-
+            dropTable(con, table);
+            String sql = "CREATE TABLE " + table + " (" + columns + ")";
+            stmt.executeUpdate(sql);
         } finally {
-            stmt.close();
+            TestUtil.closeQuietly(stmt);
         }
     }
 
@@ -110,9 +110,10 @@ public final class DuckDbTestUtil implements TestUtil {
     public void dropTable(Connection con, String table) throws SQLException {
         Statement stmt = con.createStatement();
         try {
-            stmt.executeUpdate("DROP TABLE " + table);
+            String sql = "DROP TABLE IF EXISTS " + table;
+            stmt.executeUpdate(sql);
         } finally {
-            stmt.close();
+            TestUtil.closeQuietly(stmt);
         }
     }
 
@@ -121,9 +122,10 @@ public final class DuckDbTestUtil implements TestUtil {
         Statement stmt = con.createStatement();
         try {
             dropView(con, view);
-            stmt.executeUpdate("CREATE VIEW " + view + " AS " + query);
+            String sql = "CREATE VIEW " + view + " AS " + query;
+            stmt.executeUpdate(sql);
         } finally {
-            stmt.close();
+            TestUtil.closeQuietly(stmt);
         }
     }
 
@@ -131,9 +133,10 @@ public final class DuckDbTestUtil implements TestUtil {
     public void dropView(Connection con, String view) throws SQLException {
         Statement stmt = con.createStatement();
         try {
-            stmt.executeUpdate("DROP VIEW " + view);
+            String sql = "DROP VIEW IF EXISTS " + view;
+            stmt.executeUpdate(sql);
         } finally {
-            stmt.close();
+            TestUtil.closeQuietly(stmt);
         }
     }
 
@@ -168,9 +171,10 @@ public final class DuckDbTestUtil implements TestUtil {
     public void createFunction(Connection con, String name, String arguments, String query) throws SQLException {
         Statement stmt = con.createStatement();
         try {
-            stmt.executeUpdate("CREATE FUNCTION " + name + "(" + arguments + ") AS " + query);
+            String sql = "CREATE FUNCTION " + name + "(" + arguments + ") AS " + query;
+            stmt.executeUpdate(sql);
         } finally {
-            stmt.close();
+            TestUtil.closeQuietly(stmt);
         }
     }
 
@@ -178,9 +182,10 @@ public final class DuckDbTestUtil implements TestUtil {
     public void dropFunction(Connection con, String function, String arguments) throws SQLException {
         Statement stmt = con.createStatement();
         try {
-            stmt.executeUpdate("DROP FUNCTION " + function);
+            String sql = "DROP FUNCTION IF EXISTS " + function;
+            stmt.executeUpdate(sql);
         } finally {
-            stmt.close();
+            TestUtil.closeQuietly(stmt);
         }
     }
 
@@ -190,9 +195,10 @@ public final class DuckDbTestUtil implements TestUtil {
         Statement stmt = con.createStatement();
         try {
             dropObject(con, objectType, objectName);
-            stmt.executeUpdate("CREATE " + objectType + " " + objectName + " " + columnsAndOtherStuff);
+            String sql = "CREATE " + objectType + " " + objectName + " " + columnsAndOtherStuff
+            stmt.executeUpdate(sql);
         } finally {
-            stmt.close();
+            TestUtil.closeQuietly(stmt);
         }
     }
 
@@ -208,7 +214,7 @@ public final class DuckDbTestUtil implements TestUtil {
                 stmt.executeUpdate("DROP " + objectType + " " + objectName + " CASCADE");
             }
         } finally {
-            stmt.close();
+            TestUtil.closeQuietly(stmt);
         }
     }
 
