@@ -14,6 +14,8 @@ import org.postgresql.jdbc.PgConnection;
 
 import demo.ResourceLock;
 
+import static org.junit.Assert.assertEquals;
+
 import java.io.Closeable;
 import java.io.File;
 import java.sql.Connection;
@@ -244,7 +246,6 @@ public final class PostgresTestUtil implements TestUtil {
         return new File(certdir, name).getAbsolutePath();
     }
 
-    @Override
     public void initDriver() {
         try (ResourceLock ignore = lock.obtain()) {
             if (initialized) {
@@ -281,7 +282,7 @@ public final class PostgresTestUtil implements TestUtil {
     }
 
     @Override
-    public Connection openReplicationConnection() throws Exception {
+    public Connection openReplicationConnection(@Nullable Connection con) throws Exception {
         Properties properties = new Properties();
         properties.setProperty("assumeMinServerVersion", "9.4");
         properties.setProperty("protocolVersion", "3");
@@ -295,9 +296,10 @@ public final class PostgresTestUtil implements TestUtil {
     }
 
     @Override
-    public Connection openReadOnlyConnection() throws Exception {
+    public Connection openReadOnlyConnection(String option) throws Exception {
+        // option can be "ignore", "transaction", "always"
         Properties props = new Properties();
-        props.setProperty("readOnlyMode", "always");
+        props.setProperty("readOnlyMode", option);
         return openConnection(props);
     }
 
@@ -667,7 +669,7 @@ public final class PostgresTestUtil implements TestUtil {
             ps = con.prepareStatement("select count(*) from " + tableName + " as t");
             rs = ps.executeQuery();
             rs.next();
-            Assert.assertEquals(message, expectedRows, rs.getInt(1));
+            assertEquals(message, expectedRows, rs.getInt(1));
         } finally {
             closeQuietly(rs);
             closeQuietly(ps);
@@ -676,7 +678,7 @@ public final class PostgresTestUtil implements TestUtil {
 
     public void assertTransactionState(String message, Connection con, TransactionState expected) {
         TransactionState actual = getTransactionState(con);
-        Assert.assertEquals(message, expected, actual);
+        assertEquals(message, expected, actual);
     }
 
     /*

@@ -19,13 +19,11 @@ public interface TestUtil {
 
     String getDatabase();
 
-    void initDriver();
-
     Connection openPriviligedConnection() throws SQLException;
 
-    Connection openReplicationConnection() throws Exception;
+    Connection openReplicationConnection(@Nullable Connection con) throws Exception;
 
-    Connection openReadOnlyConnection() throws Exception;
+    Connection openReadOnlyConnection(@Nullable String option) throws Exception;
 
     Connection openConnection() throws SQLException;
 

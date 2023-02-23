@@ -36,10 +36,11 @@ public class ConnectionTest {
   // Set up the fixture for this testcase: the tables for this test.
   @Before
   public void setUp() throws Exception {
-    testUtil = TestUtilFactory.create(TestDbms.POSTGRES);
+    testUtil = TestUtilFactory.create(TestDbms.DUCKDB);
     con = testUtil.openConnection();
 
-    // use basic data types here or generate the test tables according to different test dbms
+    // use basic data types here or 
+    // TODO: generate the test tables according to different test dbms
     testUtil.createTable(con, "test_a", "imagename varchar,image oid,id int4");
     testUtil.createTable(con, "test_c", "source varchar,cost int4,imageid int4");
 
@@ -164,7 +165,7 @@ public class ConnectionTest {
    */
   @Test
   public void testReadOnly_always() throws Exception {
-    con = testUtil.openReadOnlyConnection();
+    con = testUtil.openReadOnlyConnection("always");
     Statement st;
     ResultSet rs;
 
@@ -259,9 +260,7 @@ public class ConnectionTest {
    */
   @Test
   public void testReadOnly_ignore() throws Exception {
-    final Properties props = new Properties();
-    props.setProperty("readOnlyMode", "ignore");
-    con = testUtil.openConnection(props);
+    con = testUtil.openReadOnlyConnection("ignore");
     Statement st;
     ResultSet rs;
 
@@ -301,9 +300,7 @@ public class ConnectionTest {
    */
   @Test
   public void testReadOnly_transaction() throws Exception {
-    final Properties props = new Properties();
-    props.setProperty("readOnlyMode", "transaction");
-    con = testUtil.openConnection(props);
+    con = testUtil.openReadOnlyConnection("transaction");
     Statement st;
     ResultSet rs;
 
