@@ -36,28 +36,28 @@ public class ConnectionTest {
   // Set up the fixture for this testcase: the tables for this test.
   @Before
   public void setUp() throws Exception {
-    testUtil = TestUtilFactory.create(TestDbms.DUCKDB);
+    testUtil = TestUtilFactory.create(TestDbms.MYSQL);
     con = testUtil.openConnection();
 
     // use basic data types here or 
     // TODO: generate the test tables according to different test dbms
-    testUtil.createTable(con, "test_a", "imagename varchar,image oid,id int4");
-    testUtil.createTable(con, "test_c", "source varchar,cost int4,imageid int4");
+    testUtil.createTable(con, "test_a", "imagename varchar(255),image int,id int");
+    testUtil.createTable(con, "test_c", "source varchar(255),cost int,imageid int");
 
-    testUtil.closeConnection(con);
+    TestUtil.closeConnection(con);
   }
 
   // Tear down the fixture for this test case.
   @After
   public void tearDown() throws Exception {
-    testUtil.closeConnection(con);
+    TestUtil.closeConnection(con);
 
     con = testUtil.openConnection();
 
     testUtil.dropTable(con, "test_a");
     testUtil.dropTable(con, "test_c");
 
-    testUtil.closeConnection(con);
+    TestUtil.closeConnection(con);
   }
 
   /*
@@ -156,7 +156,7 @@ public class ConnectionTest {
     assertEquals(9876, rs.getInt(1)); // Should not change!
     rs.close();
 
-    testUtil.closeConnection(con);
+    TestUtil.closeConnection(con);
   }
 
   /*
@@ -251,7 +251,7 @@ public class ConnectionTest {
     assertEquals(9876, rs.getInt(1)); // Should not change!
     rs.close();
 
-    testUtil.closeConnection(con);
+    TestUtil.closeConnection(con);
   }
 
   /*
@@ -291,7 +291,7 @@ public class ConnectionTest {
     assertEquals(1234, rs.getInt(1)); // Should not change!
     rs.close();
 
-    testUtil.closeConnection(con);
+    TestUtil.closeConnection(con);
   }
 
   /*
@@ -362,7 +362,7 @@ public class ConnectionTest {
     assertEquals(1111, rs.getInt(1)); // Should not change!
     rs.close();
 
-    testUtil.closeConnection(con);
+    TestUtil.closeConnection(con);
   }
 
   /*
@@ -375,7 +375,7 @@ public class ConnectionTest {
     // Should not say closed
     assertTrue(!con.isClosed());
 
-    testUtil.closeConnection(con);
+    TestUtil.closeConnection(con);
 
     // Should now say closed
     assertTrue(con.isClosed());
@@ -442,7 +442,7 @@ public class ConnectionTest {
     }
 
     con.rollback();
-    testUtil.closeConnection(con);
+    TestUtil.closeConnection(con);
   }
 
   /*
@@ -464,7 +464,7 @@ public class ConnectionTest {
     con.setTypeMap(oldmap);
     assertEquals(oldmap, con.getTypeMap());
 
-    testUtil.closeConnection(con);
+    TestUtil.closeConnection(con);
   }
 
   /**

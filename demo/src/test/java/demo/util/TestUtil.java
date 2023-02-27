@@ -1,10 +1,13 @@
 package demo.util;
 
+import static org.junit.Assert.assertEquals;
+
 import java.io.Closeable;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -32,8 +35,6 @@ public interface TestUtil {
 
     Connection openConnection(Properties properties) throws SQLException;
 
-    void closeConnection(@Nullable Connection con) throws SQLException;
-
     void createSchema(Connection con, String schema) throws SQLException;
 
     void dropSchema(Connection con, String schema) throws SQLException;
@@ -55,8 +56,26 @@ public interface TestUtil {
 
     void dropObject(Connection con, String objectType, String objectName) throws SQLException;
 
-    void assertNumberOfRows(Connection con, String tableName, int expectedRows, String message)
-            throws SQLException;
+    public static void assertNumberOfRows(Connection con, String tableName, int expectedRows, String message)
+            throws SQLException {
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        try {
+            ps = con.prepareStatement("select count(*) from " + tableName + " as t");
+            rs = ps.executeQuery();
+            rs.next();
+            assertEquals(message, expectedRows, rs.getInt(1));
+        } finally {
+            TestUtil.closeQuietly(rs);
+            TestUtil.closeQuietly(ps);
+        }
+    }
+
+    public static void closeConnection(Connection con) throws SQLException {
+        if (con != null) {
+            con.close();
+        }
+    }
 
     public static File getFile(String name) {
         if (name == null) {
@@ -100,6 +119,7 @@ public interface TestUtil {
             try {
                 stmt.close();
             } catch (SQLException ignore) {
+                ignore.getMessage();
             }
         }
     }
@@ -116,7 +136,7 @@ public interface TestUtil {
         }
     }
 
-        /**
+    /**
      * Close a Connection and ignore any errors during closing.
      */
     public static void closeQuietly(@Nullable Connection conn) {
@@ -138,6 +158,18 @@ public interface TestUtil {
             } catch (Exception ignore) {
             }
         }
+    }
+
+    /**
+     * Percent-encode all occurrence of the the percent sign (%) in the given
+     * string.
+     * 
+     * @param strToEncode
+     *                    the string to encode
+     * @return the encoded string
+     */
+    public static String encodePercent(String strToEncode) {
+        return strToEncode.replaceAll("%", "%25");
     }
 
 }

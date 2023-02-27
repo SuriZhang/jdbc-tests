@@ -16,7 +16,6 @@ import demo.ResourceLock;
 
 import static org.junit.Assert.assertEquals;
 
-import java.io.Closeable;
 import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -55,7 +54,6 @@ public final class PostgresTestUtil implements TestUtil {
      */
     @Override
     public String getURL() {
-
         return getURL(getServer(), +getPort());
     }
 
@@ -320,7 +318,6 @@ public final class PostgresTestUtil implements TestUtil {
      */
     @Override
     public Connection openConnection(Properties props) throws SQLException {
-
         initDriver();
 
         // Allow properties to override the user name.
@@ -365,16 +362,6 @@ public final class PostgresTestUtil implements TestUtil {
         }
         String url = getURL(hostport, database);
         return DriverManager.getConnection(url, props);
-    }
-
-    /*
-     * Helper - closes an open connection.
-     */
-    @Override
-    public void closeConnection(@Nullable Connection con) throws SQLException {
-        if (con != null) {
-            con.close();
-        }
     }
 
     /*
@@ -661,20 +648,7 @@ public final class PostgresTestUtil implements TestUtil {
         }
     }
 
-    public void assertNumberOfRows(Connection con, String tableName, int expectedRows, String message)
-            throws SQLException {
-        PreparedStatement ps = null;
-        ResultSet rs = null;
-        try {
-            ps = con.prepareStatement("select count(*) from " + tableName + " as t");
-            rs = ps.executeQuery();
-            rs.next();
-            assertEquals(message, expectedRows, rs.getInt(1));
-        } finally {
-            TestUtil.closeQuietly(rs);
-            TestUtil.closeQuietly(ps);
-        }
-    }
+    
 
     public void assertTransactionState(String message, Connection con, TransactionState expected) {
         TransactionState actual = getTransactionState(con);

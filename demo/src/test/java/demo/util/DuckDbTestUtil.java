@@ -1,11 +1,7 @@
 package demo.util;
 
-import static org.junit.Assert.assertEquals;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
@@ -62,13 +58,6 @@ public final class DuckDbTestUtil implements TestUtil {
     @Override
     public Connection openConnection(Properties properties) throws SQLException {
         return DriverManager.getConnection(getURL(), properties);
-    }
-
-    @Override
-    public void closeConnection(Connection con) throws SQLException {
-        if (con != null) {
-            con.close();
-        }
     }
 
     @Override
@@ -141,26 +130,6 @@ public final class DuckDbTestUtil implements TestUtil {
     }
 
     @Override
-    public void assertNumberOfRows(Connection con, String tableName, int expectedRows, String message)
-            throws SQLException {
-        PreparedStatement ps = null;
-        ResultSet rs = null;
-        try {
-            ps = con.prepareStatement("select count(*) from " + tableName + " as t");
-            rs = ps.executeQuery();
-            rs.next();
-            assertEquals(message, expectedRows, rs.getInt(1));
-        } finally {
-            if (rs != null) {
-                rs.close();
-            }
-            if (ps != null) {
-                ps.close();
-            }
-        }
-    }
-
-    @Override
     public Connection openReadOnlyConnection(String option) throws Exception {
         Properties ro_prop = new Properties();
         ro_prop.setProperty("duckdb.read_only", "true");
@@ -195,7 +164,7 @@ public final class DuckDbTestUtil implements TestUtil {
         Statement stmt = con.createStatement();
         try {
             dropObject(con, objectType, objectName);
-            String sql = "CREATE " + objectType + " " + objectName + " " + columnsAndOtherStuff
+            String sql = "CREATE " + objectType + " " + objectName + " " + columnsAndOtherStuff;
             stmt.executeUpdate(sql);
         } finally {
             TestUtil.closeQuietly(stmt);
