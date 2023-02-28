@@ -87,27 +87,22 @@ public interface TestUtil {
         return new File(System.getProperty(name + ".relative.path", "src/"), name);
     }
 
-    public static Properties loadPropertyFiles(String... names) {
+    public static Properties loadPropertyFiles(String name) {
         Properties p = new Properties();
-        for (String name : names) {
-            for (int i = 0; i < 2; i++) {
-                // load x.properties, then x.local.properties
-                if (i == 1 && name.endsWith(".properties") && !name.endsWith(".local.properties")) {
-                    name = name.replaceAll("\\.properties$", ".local.properties");
-                }
-                File f = getFile(name);
-                if (!f.exists()) {
-                    System.out.println("Configuration file " + f.getAbsolutePath()
-                            + " does not exist. Consider adding it to specify test db host and login");
-                    continue;
-                }
-                try {
-                    p.load(new FileInputStream(f));
-                } catch (IOException ex) {
-                    // ignore
-                }
-            }
+        if (!name.endsWith(".properties")) {
+            System.out.println("Configuration file must end with .properties but found: " +  name);
         }
+        File f = getFile(name);
+        if (!f.exists()) {
+            System.out.println("Configuration file " + f.getAbsolutePath()
+                    + " does not exist. Consider adding it to specify test db host and login");
+        }
+        try {
+            p.load(new FileInputStream(f));
+        } catch (IOException ex) {
+            // ignore
+        }
+
         return p;
     }
 

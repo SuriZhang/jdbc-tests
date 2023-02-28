@@ -22,7 +22,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Properties;
 
 /**
  * TestCase to test the internal functionality of
