@@ -1,13 +1,10 @@
 package demo.util;
 
-import static org.junit.Assert.assertEquals;
-
 import java.io.Closeable;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -55,21 +52,6 @@ public interface TestUtil {
             throws SQLException;
 
     void dropObject(Connection con, String objectType, String objectName) throws SQLException;
-
-    public static void assertNumberOfRows(Connection con, String tableName, int expectedRows, String message)
-            throws SQLException {
-        PreparedStatement ps = null;
-        ResultSet rs = null;
-        try {
-            ps = con.prepareStatement("select count(*) from " + tableName + " as t");
-            rs = ps.executeQuery();
-            rs.next();
-            assertEquals(message, expectedRows, rs.getInt(1));
-        } finally {
-            TestUtil.closeQuietly(rs);
-            TestUtil.closeQuietly(ps);
-        }
-    }
 
     public static void closeConnection(Connection con) throws SQLException {
         if (con != null) {

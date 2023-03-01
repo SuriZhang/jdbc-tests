@@ -5,16 +5,12 @@ package demo.util;
  *  We kept all the methods on purpose in case of future usage.
  */
 
-import org.junit.Assert;
-import org.junit.Assume;
 import org.postgresql.PGConnection;
 import org.postgresql.core.TransactionState;
 import org.postgresql.core.BaseConnection;
 import org.postgresql.jdbc.PgConnection;
 
 import demo.ResourceLock;
-
-import static org.junit.Assert.assertEquals;
 
 import java.io.File;
 import java.sql.Connection;
@@ -235,9 +231,9 @@ public final class PostgresTestUtil implements TestUtil {
         return sslTestProperties.getProperty(name);
     }
 
-    public void assumeSslTestsEnabled() {
-        Assume.assumeTrue(Boolean.parseBoolean(getSslTestProperty("enable_ssl_tests")));
-    }
+    // public void assumeSslTestsEnabled() {
+    //     Assume.assumeTrue(Boolean.parseBoolean(getSslTestProperty("enable_ssl_tests")));
+    // }
 
     public String getSslTestCertPath(String name) {
         File certdir = TestUtil.getFile(getSslTestProperty("certdir"));
@@ -650,10 +646,10 @@ public final class PostgresTestUtil implements TestUtil {
 
     
 
-    public void assertTransactionState(String message, Connection con, TransactionState expected) {
-        TransactionState actual = getTransactionState(con);
-        assertEquals(message, expected, actual);
-    }
+    // public void assertTransactionState(String message, Connection con, TransactionState expected) {
+    //     TransactionState actual = getTransactionState(con);
+    //     assertEquals(message, expected, actual);
+    // }
 
     /*
      * Helper - generates INSERT SQL - very simple
@@ -745,12 +741,12 @@ public final class PostgresTestUtil implements TestUtil {
         return false;
     }
 
-    public void assumeHaveMinimumServerVersion(int version)
-            throws SQLException {
-        try (Connection conn = openPriviligedConnection()) {
-            Assume.assumeTrue(haveMinimumServerVersion(conn, version));
-        }
-    }
+    // public void assumeHaveMinimumServerVersion(int version)
+    //         throws SQLException {
+    //     try (Connection conn = openPriviligedConnection()) {
+    //         Assume.assumeTrue(haveMinimumServerVersion(conn, version));
+    //     }
+    // }
 
     public boolean haveMinimumJVMVersion(String version) {
         String jvm = java.lang.System.getProperty("java.version");
@@ -932,35 +928,35 @@ public final class PostgresTestUtil implements TestUtil {
      * its
      * string value.
      */
-    public String queryForString(Connection conn, String sql) throws SQLException {
-        Statement stmt = conn.createStatement();
-        ResultSet rs = stmt.executeQuery(sql);
-        Assert.assertTrue("Query should have returned exactly one row but none was found: " + sql, rs.next());
-        String value = rs.getString(1);
-        Assert.assertFalse("Query should have returned exactly one row but more than one found: " + sql, rs.next());
-        rs.close();
-        stmt.close();
-        return value;
-    }
+    // public String queryForString(Connection conn, String sql) throws SQLException {
+    //     Statement stmt = conn.createStatement();
+    //     ResultSet rs = stmt.executeQuery(sql);
+    //     Assert.assertTrue("Query should have returned exactly one row but none was found: " + sql, rs.next());
+    //     String value = rs.getString(1);
+    //     Assert.assertFalse("Query should have returned exactly one row but more than one found: " + sql, rs.next());
+    //     rs.close();
+    //     stmt.close();
+    //     return value;
+    // }
 
     /**
      * Execute a SQL query with a given connection, fetch the first row, and return
      * its
      * boolean value.
      */
-    public Boolean queryForBoolean(Connection conn, String sql) throws SQLException {
-        Statement stmt = conn.createStatement();
-        ResultSet rs = stmt.executeQuery(sql);
-        Assert.assertTrue("Query should have returned exactly one row but none was found: " + sql, rs.next());
-        Boolean value = rs.getBoolean(1);
-        if (rs.wasNull()) {
-            value = null;
-        }
-        Assert.assertFalse("Query should have returned exactly one row but more than one found: " + sql, rs.next());
-        rs.close();
-        stmt.close();
-        return value;
-    }
+    // public Boolean queryForBoolean(Connection conn, String sql) throws SQLException {
+    //     Statement stmt = conn.createStatement();
+    //     ResultSet rs = stmt.executeQuery(sql);
+    //     Assert.assertTrue("Query should have returned exactly one row but none was found: " + sql, rs.next());
+    //     Boolean value = rs.getBoolean(1);
+    //     if (rs.wasNull()) {
+    //         value = null;
+    //     }
+    //     Assert.assertFalse("Query should have returned exactly one row but more than one found: " + sql, rs.next());
+    //     rs.close();
+    //     stmt.close();
+    //     return value;
+    // }
 
     /**
      * Retrieve the backend process id for a given connection.

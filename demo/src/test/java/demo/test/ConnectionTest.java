@@ -11,6 +11,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.postgresql.util.PSQLState;
 
+import demo.DataType;
+import demo.DataType.Type;
 import demo.util.TestDbms;
 import demo.util.TestUtil;
 import demo.util.TestUtilFactory;
@@ -35,13 +37,14 @@ public class ConnectionTest {
   // Set up the fixture for this testcase: the tables for this test.
   @Before
   public void setUp() throws Exception {
-    testUtil = TestUtilFactory.create(TestDbms.MYSQL);
+    testUtil = TestUtilFactory.create(TestDbms.POSTGRES);
+    DataType dataType = new DataType(testUtil);
     con = testUtil.openConnection();
 
-    // use basic data types here or 
-    // TODO: generate the test tables according to different test dbms
-    testUtil.createTable(con, "test_a", "imagename varchar(255),image int,id int");
-    testUtil.createTable(con, "test_c", "source varchar(255),cost int,imageid int");
+    testUtil.createTable(con, "test_a",
+        "imagename " + Type.VARCHAR.toString() + ",image " + Type.DOUBLE.toString() + ",id " + Type.INT.toString());
+    testUtil.createTable(con, "test_c",
+        "source " + Type.VARCHAR.toString() + ",cost " + Type.INT.toString() + ",imageid " + Type.INT.toString());
 
     TestUtil.closeConnection(con);
   }
@@ -72,7 +75,8 @@ public class ConnectionTest {
     stat.close();
 
     // Ask for Updateable ResultSets
-    // stat = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+    // stat = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
+    // ResultSet.CONCUR_UPDATABLE);
     stat = con.createStatement();
     assertNotNull(stat);
     stat.close();
@@ -93,8 +97,9 @@ public class ConnectionTest {
     stat.close();
 
     // Ask for Updateable ResultSets
-    // stat = con.prepareStatement(sql, ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
-    stat=con.prepareStatement(sql);
+    // stat = con.prepareStatement(sql, ResultSet.TYPE_SCROLL_INSENSITIVE,
+    // ResultSet.CONCUR_UPDATABLE);
+    stat = con.prepareStatement(sql);
     assertNotNull(stat);
     stat.close();
   }

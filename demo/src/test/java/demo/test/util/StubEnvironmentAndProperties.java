@@ -1,4 +1,4 @@
-package demo.util;
+package demo.test.util;
 
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.parallel.Isolated;
