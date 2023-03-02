@@ -4,11 +4,11 @@ import demo.util.DuckDbTestUtil;
 import demo.util.PostgresTestUtil;
 import demo.util.TestUtil;
 
-public class DataType {
+public class DataTypeHandler {
     private static TestUtil testUtil;
 
-    public DataType(TestUtil testUtil) {
-        DataType.testUtil = testUtil;
+    public DataTypeHandler(TestUtil testUtil) {
+        DataTypeHandler.testUtil = testUtil;
     }
 
     public enum Type {

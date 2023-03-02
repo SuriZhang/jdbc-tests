@@ -11,8 +11,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.postgresql.util.PSQLState;
 
-import demo.DataType;
-import demo.DataType.Type;
+import demo.DataTypeHandler;
+import demo.DataTypeHandler.Type;
 import demo.util.TestDbms;
 import demo.util.TestUtil;
 import demo.util.TestUtilFactory;
@@ -37,8 +37,8 @@ public class ConnectionTest {
   // Set up the fixture for this testcase: the tables for this test.
   @Before
   public void setUp() throws Exception {
-    testUtil = TestUtilFactory.create(TestDbms.POSTGRES);
-    DataType dataType = new DataType(testUtil);
+    testUtil = TestUtilFactory.create(TestDbms.DUCKDB);
+    DataTypeHandler dataTypeHandler = new DataTypeHandler(testUtil);
     con = testUtil.openConnection();
 
     testUtil.createTable(con, "test_a",
