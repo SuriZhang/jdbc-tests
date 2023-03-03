@@ -360,6 +360,13 @@ public final class PostgresTestUtil implements TestUtil {
         return DriverManager.getConnection(url, props);
     }
 
+    @Override
+    public void closeConnection(Connection con) throws SQLException {
+        if (con != null) {
+            con.close();
+          }
+    }
+
     /*
      * Helper - creates a test schema for use by a test
      */

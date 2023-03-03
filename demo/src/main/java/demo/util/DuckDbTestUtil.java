@@ -187,4 +187,9 @@ public final class DuckDbTestUtil implements TestUtil {
         }
     }
 
+    @Override
+    public void closeConnection(Connection con) throws SQLException {
+        ((DuckDBConnection) con).close();
+    }
+
 }

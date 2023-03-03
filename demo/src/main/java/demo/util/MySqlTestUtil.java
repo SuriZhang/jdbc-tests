@@ -219,6 +219,11 @@ public final class MySqlTestUtil implements TestUtil {
         }
     }
 
-    
+    @Override
+    public void closeConnection(Connection con) throws SQLException {
+        if (con != null) {
+            con.close();
+        }
+    }
 
 }

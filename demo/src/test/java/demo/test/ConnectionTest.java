@@ -46,20 +46,20 @@ public class ConnectionTest {
     testUtil.createTable(con, "test_c",
         "source " + Type.VARCHAR.toString() + ",cost " + Type.INT.toString() + ",imageid " + Type.INT.toString());
 
-    TestUtil.closeConnection(con);
+    testUtil.closeConnection(con);
   }
 
   // Tear down the fixture for this test case.
   @After
   public void tearDown() throws Exception {
-    TestUtil.closeConnection(con);
+    testUtil.closeConnection(con);
 
     con = testUtil.openConnection();
 
     testUtil.dropTable(con, "test_a");
     testUtil.dropTable(con, "test_c");
 
-    TestUtil.closeConnection(con);
+    testUtil.closeConnection(con);
   }
 
   /*
@@ -160,7 +160,7 @@ public class ConnectionTest {
     assertEquals(9876, rs.getInt(1)); // Should not change!
     rs.close();
 
-    TestUtil.closeConnection(con);
+    testUtil.closeConnection(con);
   }
 
   /*
@@ -255,7 +255,7 @@ public class ConnectionTest {
     assertEquals(9876, rs.getInt(1)); // Should not change!
     rs.close();
 
-    TestUtil.closeConnection(con);
+    testUtil.closeConnection(con);
   }
 
   /*
@@ -295,7 +295,7 @@ public class ConnectionTest {
     assertEquals(1234, rs.getInt(1)); // Should not change!
     rs.close();
 
-    TestUtil.closeConnection(con);
+    testUtil.closeConnection(con);
   }
 
   /*
@@ -366,7 +366,7 @@ public class ConnectionTest {
     assertEquals(1111, rs.getInt(1)); // Should not change!
     rs.close();
 
-    TestUtil.closeConnection(con);
+    testUtil.closeConnection(con);
   }
 
   /*
@@ -379,7 +379,7 @@ public class ConnectionTest {
     // Should not say closed
     assertTrue(!con.isClosed());
 
-    TestUtil.closeConnection(con);
+    testUtil.closeConnection(con);
 
     // Should now say closed
     assertTrue(con.isClosed());
@@ -446,7 +446,7 @@ public class ConnectionTest {
     }
 
     con.rollback();
-    TestUtil.closeConnection(con);
+    testUtil.closeConnection(con);
   }
 
   /*
@@ -468,7 +468,7 @@ public class ConnectionTest {
     con.setTypeMap(oldmap);
     assertEquals(oldmap, con.getTypeMap());
 
-    TestUtil.closeConnection(con);
+    testUtil.closeConnection(con);
   }
 
   /**

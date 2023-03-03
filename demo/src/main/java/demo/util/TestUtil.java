@@ -53,11 +53,7 @@ public interface TestUtil {
 
     void dropObject(Connection con, String objectType, String objectName) throws SQLException;
 
-    public static void closeConnection(Connection con) throws SQLException {
-        if (con != null) {
-            con.close();
-        }
-    }
+    public void closeConnection(Connection con) throws SQLException;
 
     public static File getFile(String name) {
         if (name == null) {
