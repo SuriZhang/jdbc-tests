@@ -37,7 +37,7 @@ public class ConnectionTest {
   // Set up the fixture for this testcase: the tables for this test.
   @Before
   public void setUp() throws Exception {
-    testUtil = TestUtilFactory.create(TestDbms.DUCKDB);
+    testUtil = TestUtilFactory.create(TestDbms.POSTGRES);
     DataTypeHandler dataTypeHandler = new DataTypeHandler(testUtil);
     con = testUtil.openConnection();
 

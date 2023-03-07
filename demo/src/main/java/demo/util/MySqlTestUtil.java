@@ -72,7 +72,7 @@ public final class MySqlTestUtil implements TestUtil {
         // // TODO: need to verify
         // return "jdbc:mysql:///test";
 
-        return "jdbc:mysql://"
+        return "jdbc:log4jdbc:mysql://"
         + server + ":" + port + "/"
         + database+ "?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true";
     }

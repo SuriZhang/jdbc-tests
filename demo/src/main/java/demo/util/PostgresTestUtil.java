@@ -88,7 +88,7 @@ public final class PostgresTestUtil implements TestUtil {
             ssl = "&ssl=" + getSSL();
         }
 
-        return "jdbc:postgresql://"
+        return "jdbc:log4jdbc:postgresql://"
                 + hostport + "/"
                 + database
                 + "?ApplicationName=Driver Tests"

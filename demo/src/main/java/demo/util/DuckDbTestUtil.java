@@ -31,7 +31,7 @@ public final class DuckDbTestUtil implements TestUtil {
     public String getURL() {
         // store duckdb data in tmp.db file otherwise it will be stored in memory
         // using relative path without leading slash here
-        return "jdbc:duckdb:src/test/java/demo/data/duckdb/tmp.db";
+        return "jdbc:log4jdbc:duckdb:src/test/java/demo/data/duckdb/tmp.db";
     }
 
     @Override
