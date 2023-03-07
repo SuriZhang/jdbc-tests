@@ -97,12 +97,6 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.19.1</version>
-          <!-- <configuration>
-            <additionalClasspathElements>
-              <additionalClasspathElement>log4j2.xml</additionalClasspathElement>
-               <additionalClasspathElement>lo</additionalClasspathElement> 
-            </additionalClasspathElements>
-          </configuration> -->
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
