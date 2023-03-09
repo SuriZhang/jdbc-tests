@@ -3,7 +3,7 @@ package demo.state;
 import demo.Randomly;
 
 public enum State {
-    INTIAL {
+    INTIAL { 
         @Override
         State[] nextStateCandidates() {
             return new State[] { CONNECTION_OPENED };
@@ -11,7 +11,8 @@ public enum State {
 
         @Override
         public Action[] actionCandidates() {
-            return null;
+            return new Action[] { Action.OPEN_PRIVILIGED_CONNECTION, Action.OPEN_REPLICATION_CONNECTION,
+                Action.OPEN_READ_ONLY_CONNECTION, Action.OPEN_CONNECTION };
         }
     },
     CONNECTION_OPENED {

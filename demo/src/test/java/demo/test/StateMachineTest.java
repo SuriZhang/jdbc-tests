@@ -11,8 +11,6 @@ public class StateMachineTest {
     public void test() throws Exception {
         StateMachine stateMachine = new StateMachine();
         stateMachine.showCurrentState();
-        stateMachine.nextState();
-        stateMachine.showCurrentState();
         do {
             Action a = stateMachine.action();
             System.out.println("\t Perform Action: " + stateMachine.action());

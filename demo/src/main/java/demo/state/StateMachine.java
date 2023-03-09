@@ -18,7 +18,7 @@ public final class StateMachine {
         return candidates != null ? Randomly.fromOptions(candidates) : null;
     }
 
-    public void printActionCandidates() {
+    public void showActionCandidates() {
         Action[] actions = currentState.actionCandidates();
         if (actions == null) {
             return;
@@ -28,7 +28,6 @@ public final class StateMachine {
             System.out.println("\t" + a.toString());
         }
     }
-
 
     public void showCurrentState() {
         System.out.println("Current State: " + currentState);
