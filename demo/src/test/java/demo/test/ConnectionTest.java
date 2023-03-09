@@ -11,8 +11,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.postgresql.util.PSQLState;
 
-import demo.DataTypeHandler;
-import demo.DataTypeHandler.Type;
+import demo.DataType;
 import demo.util.TestDbms;
 import demo.util.TestUtil;
 import demo.util.TestUtilFactory;
@@ -37,14 +36,14 @@ public class ConnectionTest {
   // Set up the fixture for this testcase: the tables for this test.
   @Before
   public void setUp() throws Exception {
-    testUtil = TestUtilFactory.create(TestDbms.POSTGRES);
-    DataTypeHandler dataTypeHandler = new DataTypeHandler(testUtil);
+    testUtil = TestUtilFactory.create(TestDbms.DUCKDB);
+    // DataTypeHandler dataTypeHandler = new DataTypeHandler(testUtil);
     con = testUtil.openConnection();
 
     testUtil.createTable(con, "test_a",
-        "imagename " + Type.VARCHAR.toString() + ",image " + Type.DOUBLE.toString() + ",id " + Type.INT.toString());
+        "imagename " + DataType.VARCHAR.toString() + " ,image " + DataType.DOUBLE.toString() + " ,id " + DataType.INT.toString());
     testUtil.createTable(con, "test_c",
-        "source " + Type.VARCHAR.toString() + ",cost " + Type.INT.toString() + ",imageid " + Type.INT.toString());
+        "source " + DataType.VARCHAR.toString() + " ,cost " + DataType.INT.toString() + " ,imageid " + DataType.INT.toString());
 
     testUtil.closeConnection(con);
   }

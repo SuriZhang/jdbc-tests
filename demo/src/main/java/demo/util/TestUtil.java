@@ -12,48 +12,45 @@ import java.util.Properties;
 
 import javax.annotation.Nullable;
 
-public interface TestUtil {
+public abstract class TestUtil {
+    public abstract String getDatabase();
 
-    String getURL();
+    public abstract Connection openPriviligedConnection() throws SQLException;
 
-    String getServer();
+    public abstract Connection openReplicationConnection(@Nullable Connection con) throws Exception;
 
-    int getPort();
+    public abstract Connection openReadOnlyConnection(@Nullable String option) throws Exception;
 
-    String getDatabase();
+    public abstract Connection openConnection() throws SQLException;
 
-    Connection openPriviligedConnection() throws SQLException;
+    public abstract Connection openConnection(Properties properties) throws SQLException;
 
-    Connection openReplicationConnection(@Nullable Connection con) throws Exception;
+    public abstract void createSchema(Connection con, String schema) throws SQLException;
 
-    Connection openReadOnlyConnection(@Nullable String option) throws Exception;
+    public abstract void dropSchema(Connection con, String schema) throws SQLException;
 
-    Connection openConnection() throws SQLException;
+    public abstract void createTable(Connection con, String table, String columns) throws SQLException;
 
-    Connection openConnection(Properties properties) throws SQLException;
+    public abstract void dropTable(Connection con, String table) throws SQLException;
 
-    void createSchema(Connection con, String schema) throws SQLException;
+    public abstract void createView(Connection con, String view, String query) throws SQLException;
 
-    void dropSchema(Connection con, String schema) throws SQLException;
+    public abstract void dropView(Connection con, String view) throws SQLException;
 
-    void createTable(Connection con, String table, String columns) throws SQLException;
-
-    void dropTable(Connection con, String table) throws SQLException;
-
-    void createView(Connection con, String view, String query) throws SQLException;
-
-    void dropView(Connection con, String view) throws SQLException;
-
-    void createFunction(Connection con, String name, String arguments, String query) throws SQLException;
-
-    void dropFunction(Connection con, String function, String arguments) throws SQLException;
-
-    void createObject(Connection con, String objectType, String objectName, String columnsAndOtherStuff)
+    public abstract void createFunction(Connection con, String name, String arguments, String query)
             throws SQLException;
 
-    void dropObject(Connection con, String objectType, String objectName) throws SQLException;
+    public abstract void dropFunction(Connection con, String function, String arguments) throws SQLException;
 
-    public void closeConnection(Connection con) throws SQLException;
+    public abstract void createObject(Connection con, String objectType, String objectName, String columnsAndOtherStuff)
+            throws SQLException;
+
+    public abstract void dropObject(Connection con, String objectType, String objectName) throws SQLException;
+
+    // TODO: create more methods for sql queries: select, insert, update, delete,
+    // alter table etc.
+
+    public abstract void closeConnection(Connection con) throws SQLException;
 
     public static File getFile(String name) {
         if (name == null) {
@@ -68,7 +65,7 @@ public interface TestUtil {
     public static Properties loadPropertyFiles(String name) {
         Properties p = new Properties();
         if (!name.endsWith(".properties")) {
-            System.out.println("Configuration file must end with .properties but found: " +  name);
+            System.out.println("Configuration file must end with .properties but found: " + name);
         }
         File f = getFile(name);
         if (!f.exists()) {

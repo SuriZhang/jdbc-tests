@@ -1,6 +1,6 @@
 package demo.util;
 
-public class TestUtilFactory {
+public final class TestUtilFactory {
     public static TestUtil create(TestDbms testDbms) {
         switch (testDbms) {
             case POSTGRES:

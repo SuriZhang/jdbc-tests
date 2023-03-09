@@ -12,7 +12,7 @@ import com.mysql.cj.conf.ConnectionUrl;
 import com.mysql.cj.jdbc.JdbcConnection;
 import com.mysql.cj.jdbc.NonRegisteringDriver;
 
-public final class MySqlTestUtil implements TestUtil {
+public final class MySqlTestUtil extends TestUtil {
 
     @Override
     public void createSchema(Connection con, String schema) throws SQLException {
@@ -52,25 +52,21 @@ public final class MySqlTestUtil implements TestUtil {
         return System.getProperty("database", "test");
     }
 
-    @Override
+    
     public int getPort() {
         return Integer.parseInt(System.getProperty("port", "3306"));
     }
 
-    @Override
+    
     public String getServer() {
         return System.getProperty("server", "localhost");
     }
 
-    @Override
+    
     public String getURL() {
         String server = getServer();
         int port = getPort();
         String database = getDatabase();
-
-        // // copied from mysql-connector-j::BaseTestCase
-        // // TODO: need to verify
-        // return "jdbc:mysql:///test";
 
         return "jdbc:log4jdbc:mysql://"
         + server + ":" + port + "/"

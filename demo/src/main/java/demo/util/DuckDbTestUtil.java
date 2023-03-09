@@ -10,28 +10,20 @@ import javax.annotation.Nullable;
 
 import org.duckdb.DuckDBConnection;
 
-public final class DuckDbTestUtil implements TestUtil {
+import net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator;
+import net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy;
 
-    @Override
-    public String getDatabase() {
-        return null;
-    }
-
-    @Override
-    public int getPort() {
-        return -1;
-    }
-
-    @Override
-    public String getServer() {
-        return null;
-    }
-
-    @Override
+public final class DuckDbTestUtil extends TestUtil {
+    
     public String getURL() {
         // store duckdb data in tmp.db file otherwise it will be stored in memory
         // using relative path without leading slash here
         return "jdbc:log4jdbc:duckdb:src/test/java/demo/data/duckdb/tmp.db";
+    }
+
+    @Override
+    public String getDatabase() {
+        return null;
     }
 
     @Override
@@ -52,12 +44,18 @@ public final class DuckDbTestUtil implements TestUtil {
 
     @Override
     public Connection openConnection() throws SQLException {
-        return DriverManager.getConnection(getURL());
+        // TODO: write our own log4jdbc and directly configure it in the logging component.
+        // Currently duckdb is not logged.
+        Connection con= DriverManager.getConnection(getURL());
+        return new ConnectionSpy(con, new Slf4jSpyLogDelegator());
+        // DriverSpy duckdbDriverSpy = new DriverSpy();
+        // return duckdbDriverSpy.connect(getURL(), new Properties());
     }
 
     @Override
     public Connection openConnection(Properties properties) throws SQLException {
-        return DriverManager.getConnection(getURL(), properties);
+        Connection con= DriverManager.getConnection(getURL(), properties);
+        return new ConnectionSpy(con, new Slf4jSpyLogDelegator());
     }
 
     @Override
@@ -191,5 +189,4 @@ public final class DuckDbTestUtil implements TestUtil {
     public void closeConnection(Connection con) throws SQLException {
         ((DuckDBConnection) con).close();
     }
-
 }
