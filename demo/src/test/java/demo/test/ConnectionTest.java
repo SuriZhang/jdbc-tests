@@ -12,10 +12,9 @@ import org.junit.Test;
 import org.postgresql.util.PSQLState;
 
 import demo.DataType;
+import demo.GlobalInfo;
 import demo.util.TestDbms;
 import demo.util.TestUtil;
-import demo.util.TestUtilFactory;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -36,8 +35,7 @@ public class ConnectionTest {
   // Set up the fixture for this testcase: the tables for this test.
   @Before
   public void setUp() throws Exception {
-    testUtil = TestUtilFactory.create(TestDbms.DUCKDB);
-    // DataTypeHandler dataTypeHandler = new DataTypeHandler(testUtil);
+    testUtil = GlobalInfo.setTestDbms(TestDbms.POSTGRES);
     con = testUtil.openConnection();
 
     testUtil.createTable(con, "test_a",
