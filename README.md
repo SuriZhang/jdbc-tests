@@ -17,3 +17,4 @@ CREATE DATABASE test;
 CREATE USER 'test'@'%' IDENTIFIED BY 'test';
 GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'test'@'%' WITH GRANT OPTION;
 ```
+after first time, just restart container: `docker restart mysql-test`
