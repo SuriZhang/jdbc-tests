@@ -49,4 +49,8 @@ public enum DataType {
                 throw new IllegalArgumentException("Unknown type: " + this);
         }
     }
+
+    public static DataType getRandomDataType() {
+        return Randomly.fromOptions(DataType.values());
+    }
 }

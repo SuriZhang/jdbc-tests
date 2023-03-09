@@ -1,20 +1,22 @@
 package demo.state;
 
+import demo.Randomly;
+
 public enum State {
     INTIAL {
         @Override
-        public State[] nextStateCandidates() {
+        State[] nextStateCandidates() {
             return new State[] { CONNECTION_OPENED };
         }
 
         @Override
         public Action[] actionCandidates() {
-            return new Action[] {};
+            return null;
         }
     },
     CONNECTION_OPENED {
         @Override
-        public State[] nextStateCandidates() {
+        State[] nextStateCandidates() {
             return new State[] { CONNECTION_OPENED, CONNECTION_CLOSED, STATEMENT_EXECUTED };
         }
 
@@ -27,7 +29,7 @@ public enum State {
     STATEMENT_EXECUTED { // TODO: maybe break this down to more states: table created, table dropped,
                          // select, insert, update, delete?
         @Override
-        public State[] nextStateCandidates() {
+        State[] nextStateCandidates() {
             return new State[] { CONNECTION_OPENED, CONNECTION_CLOSED, STATEMENT_EXECUTED };
         }
 
@@ -39,7 +41,7 @@ public enum State {
     },
     CONNECTION_CLOSED {
         @Override
-        public State[] nextStateCandidates() {
+        State[] nextStateCandidates() {
             return new State[] { CONNECTION_OPENED, CONNECTION_CLOSED, FINAL };
         }
 
@@ -48,32 +50,37 @@ public enum State {
             return new Action[] { Action.CLOSE_CONNECTION };
         }
     },
-
-    FINAL {
+    EXCEPTION {
         @Override
-        public State[] nextStateCandidates() {
-            return new State[] {};
+        State[] nextStateCandidates() {
+            return new State[] { FINAL };
         }
 
         @Override
         public Action[] actionCandidates() {
-            return new Action[] {};
+            return null;
+        }
+    },
+    FINAL {
+        @Override
+        State[] nextStateCandidates() {
+            return null;
+        }
+
+        @Override
+        public Action[] actionCandidates() {
+            return null;
         }
     };
 
     // states that can be reached from this state
-    public abstract State[] nextStateCandidates();
+    abstract State[] nextStateCandidates();
 
     // actions that can be performed in this state
     public abstract Action[] actionCandidates();
 
-    // returns a random next state from nextStateCandidates()
-    public State nextState() {
-        return Randomly.fromOptions(nextStateCandidates());
-    }
-
-    // returns a random action from actionCandidates()
-    public Action action() {
-        return Randomly.fromOptions(actionCandidates());
+    State nextState() {
+        State[] candidates = nextStateCandidates();
+        return candidates != null ? Randomly.fromOptions(candidates) : null;
     }
 }

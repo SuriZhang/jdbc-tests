@@ -50,7 +50,7 @@ public final class PostgresTestUtil extends TestUtil {
     /*
      * Returns the Test database JDBC URL
      */
-   
+
     public String getURL() {
         return getURL(getServer(), +getPort());
     }
@@ -105,7 +105,7 @@ public final class PostgresTestUtil extends TestUtil {
     /*
      * Returns the Test server
      */
-    
+
     public String getServer() {
         return System.getProperty("server", "localhost");
     }
@@ -113,7 +113,7 @@ public final class PostgresTestUtil extends TestUtil {
     /*
      * Returns the Test port
      */
-    
+
     public int getPort() {
         return Integer.parseInt(System.getProperty("port", System.getProperty("def_pgport")));
     }
@@ -363,12 +363,6 @@ public final class PostgresTestUtil extends TestUtil {
         String url = getURL(hostport, database);
 
         Connection con = DriverManager.getConnection(url, props);
-
-        // make sure we update state only if connection was successful
-        if (con != null) {
-            GlobalInfo.currentState = State.CONNECTION_OPENED;
-            
-        }
         return con;
     }
 
@@ -377,7 +371,6 @@ public final class PostgresTestUtil extends TestUtil {
         if (con != null) {
             con.close();
         }
-        GlobalInfo.currentState = State.CONNECTION_CLOSED;
     }
 
     /*
@@ -395,8 +388,6 @@ public final class PostgresTestUtil extends TestUtil {
 
             st.executeUpdate(sql);
         } finally {
-            // make sure we update state only if statement execution was successful
-            GlobalInfo.currentState = State.STATEMENT_EXECUTED;
             TestUtil.closeQuietly(st);
         }
     }
@@ -424,8 +415,6 @@ public final class PostgresTestUtil extends TestUtil {
 
             st.executeUpdate(sql);
         } finally {
-            // make sure we update state only if statement execution was successful
-            GlobalInfo.currentState = State.STATEMENT_EXECUTED;
             TestUtil.closeQuietly(st);
         }
     }
@@ -447,8 +436,6 @@ public final class PostgresTestUtil extends TestUtil {
             // Now create the table
             st.executeUpdate("create temp table " + table + " (" + columns + ")");
         } finally {
-            // make sure we update state only if statement execution was successful
-            GlobalInfo.currentState = State.STATEMENT_EXECUTED;
             TestUtil.closeQuietly(st);
         }
     }
@@ -469,8 +456,6 @@ public final class PostgresTestUtil extends TestUtil {
             // Now create the table
             st.executeUpdate("CREATE " + unlogged + " TABLE " + table + " (" + columns + ")");
         } finally {
-            // make sure we update state only if statement execution was successful
-            GlobalInfo.currentState = State.STATEMENT_EXECUTED;
             TestUtil.closeQuietly(st);
         }
     }
@@ -481,7 +466,8 @@ public final class PostgresTestUtil extends TestUtil {
     @Override
     public void createView(Connection con, String viewName, String query)
             throws SQLException {
-        try (Statement st = con.createStatement()) {
+        Statement st = con.createStatement();
+        try {
             // Drop the view
             dropView(con, viewName);
 
@@ -489,8 +475,7 @@ public final class PostgresTestUtil extends TestUtil {
 
             st.executeUpdate(sql);
         } finally {
-            // make sure we update state only if statement execution was successful
-            GlobalInfo.currentState = State.STATEMENT_EXECUTED;
+            TestUtil.closeQuietly(st);
         }
     }
 
@@ -637,8 +622,6 @@ public final class PostgresTestUtil extends TestUtil {
 
             st.executeUpdate("create " + type + " " + name + " " + columnsAndOtherStuff);
         } finally {
-            // make sure we update state only if statement execution was successful
-            GlobalInfo.currentState = State.STATEMENT_EXECUTED;
             TestUtil.closeQuietly(st);
         }
     }
@@ -649,8 +632,6 @@ public final class PostgresTestUtil extends TestUtil {
         try {
             stmt.executeUpdate("CREATE FUNCTION " + name + "(" + arguments + ") " + query + " LANGUAGE SQL");
         } finally {
-            // make sure we update state only if statement execution was successful
-            GlobalInfo.currentState = State.STATEMENT_EXECUTED;
             TestUtil.closeQuietly(stmt);
         }
     }
@@ -675,8 +656,6 @@ public final class PostgresTestUtil extends TestUtil {
                 stmt.executeUpdate("DROP " + type + " " + name + " CASCADE");
             }
         } finally {
-            // make sure we update state only if statement execution was successful
-            GlobalInfo.currentState = State.STATEMENT_EXECUTED;
             TestUtil.closeQuietly(stmt);
         }
     }
