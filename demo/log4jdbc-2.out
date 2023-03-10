@@ -1,0 +1,116 @@
+Current State: INTIAL
+	 Perform Action: OPEN_PRIVILIGED_CONNECTION
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILIGED_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_SCHEMA
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_FUNCTION
+
+14:36:16.987 [main] INFO - 1. Connection opened. {executed in 1015ms} 
+
+14:36:16.988 [main] INFO - 1. Connection.new Connection returned 
+
+14:36:16.991 [main] INFO - 1. Connection closed. {executed in 3ms} 
+
+14:36:16.991 [main] INFO - 1. Connection.close() returned 
+
+14:36:16.991 [main] INFO - 1. Connection closed. {executed in 0ms} 
+
+14:36:16.992 [main] INFO - 1. Connection.close() returned 
+
+14:36:17.151 [main] INFO - 2. Connection opened. {executed in 159ms} 
+
+14:36:17.151 [main] INFO - 2. Connection.new Connection returned 
+
+14:36:17.152 [main] INFO - 2. Connection closed. {executed in 0ms} 
+
+14:36:17.152 [main] INFO - 2. Connection.close() returned 
+
+14:36:17.153 [main] INFO - 2. Connection closed. {executed in 0ms} 
+
+14:36:17.153 [main] INFO - 2. Connection.close() returned 
+
+14:36:17.521 [main] INFO - 3. Connection opened. {executed in 368ms} 
+
+14:36:17.521 [main] INFO - 3. Connection.new Connection returned 
+
+14:36:17.530 [main] INFO - 3. Statement.new Statement returned 
+
+14:36:17.531 [main] INFO - 3. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@1622f1b
+
+14:36:17.531 [main] INFO - 3. Statement.new Statement returned 
+
+14:36:17.531 [main] INFO - 3. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@72a7c7e0
+
+14:36:17.531 [main] INFO - 3. Connection.getAutoCommit() returned true
+
+14:36:17.536 [main] INFO - 3. DROP SCHEMA IF EXISTS schema_0 CASCADE  {executed in 4 ms}
+
+14:36:17.537 [main] INFO - 3. Statement.executeUpdate(DROP SCHEMA IF EXISTS schema_0 CASCADE) returned 0
+
+14:36:17.537 [main] INFO - 3. Statement.close() returned 
+
+14:36:17.541 [main] INFO - 3. CREATE SCHEMA schema_0  {executed in 4 ms}
+
+14:36:17.541 [main] INFO - 3. Statement.executeUpdate(CREATE SCHEMA schema_0) returned 0
+
+14:36:17.541 [main] INFO - 3. Statement.close() returned 
+
+14:36:17.542 [main] INFO - 3. Statement.new Statement returned 
+
+14:36:17.543 [main] INFO - 3. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@34b7ac2f
+
+14:36:17.547 [main] ERROR - 3. Statement.executeUpdate(CREATE FUNCTION test_blob(REFCURSOR, int4) AS $$ BEGIN RETURN QUERY SELECT * FROM pg_catalog.pg_tables; END; $$ LANGUAGE plpgsql; LANGUAGE SQL) FAILED! CREATE FUNCTION test_blob(REFCURSOR, int4) AS $$ BEGIN RETURN QUERY SELECT * FROM pg_catalog.pg_tables; 
+END; $$ LANGUAGE plpgsql; LANGUAGE SQL  {FAILED after 2 ms}
+org.postgresql.util.PSQLException: ERROR: function result type must be specified
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:268)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.executeUpdate(StatementSpy.java:767)
+	at demo.util.PostgresTestUtil.createFunction(PostgresTestUtil.java:633)
+	at demo.state.Action$11.invoke(Action.java:193)
+	at demo.test.StateMachineTest.test_1(StateMachineTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+14:36:17.548 [main] INFO - 3. Statement.close() returned 
+

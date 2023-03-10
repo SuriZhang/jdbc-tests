@@ -1,0 +1,1136 @@
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_VIEW
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: ignore
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_TABLE
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no table available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_VIEW
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_VIEW
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: always
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_TABLE
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no table available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_FUNCTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_FUNCTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_FUNCTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_FUNCTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_VIEW
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_SCHEMA
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no schema available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_VIEW
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_FUNCTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_VIEW
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_TABLE
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no table available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: always
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: always
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_SCHEMA
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no schema available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_FUNCTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_SCHEMA
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no schema available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_SCHEMA
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no schema available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_TABLE
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no table available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: ignore
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: ignore
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_VIEW
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_SCHEMA
+	 Create schema: schema_0
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_TABLE
+	 Create table: table_0 with columns: column_0 BOOLEAN
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: ignore
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_SCHEMA
+	 Create schema: schema_0
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_SCHEMA
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no schema available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_FUNCTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_VIEW
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_TABLE
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no table available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: ignore
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_FUNCTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: always
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_VIEW
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_TABLE
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: This connection has been closed.
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_FUNCTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_TABLE
+	 Create table: table_0 with columns: column_0 BOOLEAN
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_SCHEMA
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no schema available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: ignore
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_TABLE
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no table available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_SCHEMA
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no schema available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: always
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: ignore
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_SCHEMA
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no schema available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_SCHEMA
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no schema available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_FUNCTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_VIEW
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_SCHEMA
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no schema available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_FUNCTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_SCHEMA
+	 Create schema: schema_42
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_SCHEMA
+	 Create schema: schema_0
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: ignore
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_SCHEMA
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no schema available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_SCHEMA
+	 Create schema: schema_0
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_VIEW
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: always
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_SCHEMA
+	 Create schema: schema_0
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_FUNCTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: ignore
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: ignore
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_SCHEMA
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no schema available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: ignore
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_FUNCTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_VIEW
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_SCHEMA
+	 Create schema: schema_0
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_FUNCTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_TABLE
+	 Create table: table_0 with columns: column_0 TEXT
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_FUNCTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_VIEW
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: always
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: always
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_TABLE
+	 Create table: table_0 with columns: column_0 INT
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_FUNCTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: ignore
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_SCHEMA
+	 Create schema: schema_0
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_FUNCTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_TABLE
+	 Create table: table_0 with columns: column_0 INT, column_18 DOUBLE PRECISION, column_1 REAL
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: always
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: always
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: ignore
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: always
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_VIEW
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_TABLE
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: This connection has been closed.
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_FUNCTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_VIEW
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_FUNCTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: This connection has been closed.
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_VIEW
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_FUNCTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_SCHEMA
+	 Create schema: schema_0
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_SCHEMA
+	 Drop schema: schema_0
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_TABLE
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no table available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_VIEW
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_TABLE
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no table available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: transaction
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: always
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: DROP_SCHEMA
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: java.lang.IllegalStateException: no schema available
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: ignore
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_FUNCTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_FUNCTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_PRIVILEGED_CONNECTION
+Current State: CONNECTION_OPENED
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_REPLICATION_CONNECTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: FATAL: number of requested standby connections exceeds max_wal_senders (currently 10)
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: CONNECTION_CLOSED
+	 Perform Action: CLOSE_CONNECTION
+Current State: FINAL
+Current State: INITIAL
+	 Perform Action: OPEN_READ_ONLY_CONNECTION
+	 option: ignore
+Current State: STATEMENT_EXECUTED
+	 Perform Action: CREATE_FUNCTION
+Current State: EXCEPTION
+	 Perform Action: HANDLE_EXCEPTION
+	 Exception: org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+Current State: FINAL

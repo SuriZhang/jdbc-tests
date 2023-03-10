@@ -1,0 +1,2256 @@
+
+
+15:47:25.621 [main] INFO - 1. Connection opened. {executed in 888ms} 
+
+15:47:25.631 [main] INFO - 1. Connection.new Connection returned 
+
+15:47:25.664 [main] INFO - 1. Connection closed. {executed in 12ms} 
+
+15:47:25.669 [main] INFO - 1. Connection.close() returned 
+
+15:47:25.675 [main] INFO - 1. Connection closed. {executed in 0ms} 
+
+15:47:25.680 [main] INFO - 1. Connection.close() returned 
+
+15:47:25.925 [main] INFO - 2. Connection opened. {executed in 186ms} 
+
+15:47:25.948 [main] INFO - 2. Connection.new Connection returned 
+
+15:47:26.001 [main] INFO - 3. Connection opened. {executed in 52ms} 
+
+15:47:26.001 [main] INFO - 3. Connection.new Connection returned 
+
+15:47:26.002 [main] INFO - 3. Connection closed. {executed in 1ms} 
+
+15:47:26.008 [main] INFO - 3. Connection.close() returned 
+
+15:47:26.317 [main] INFO - 4. Connection opened. {executed in 308ms} 
+
+15:47:26.318 [main] INFO - 4. Connection.new Connection returned 
+
+15:47:26.326 [main] INFO - 2. Connection closed. {executed in 7ms} 
+
+15:47:26.327 [main] INFO - 2. Connection.close() returned 
+
+15:47:26.335 [main] INFO - 4. Connection closed. {executed in 3ms} 
+
+15:47:26.336 [main] INFO - 4. Connection.close() returned 
+
+15:47:26.337 [main] INFO - 2. Connection closed. {executed in 0ms} 
+
+15:47:26.337 [main] INFO - 2. Connection.close() returned 
+
+15:47:26.408 [main] INFO - 5. Connection opened. {executed in 69ms} 
+
+15:47:26.409 [main] INFO - 5. Connection.new Connection returned 
+
+15:47:26.411 [main] INFO - 5. Connection closed. {executed in 0ms} 
+
+15:47:26.412 [main] INFO - 5. Connection.close() returned 
+
+15:47:26.412 [main] INFO - 5. Connection closed. {executed in 0ms} 
+
+15:47:26.412 [main] INFO - 5. Connection.close() returned 
+
+15:47:26.610 [main] INFO - 6. Connection opened. {executed in 196ms} 
+
+15:47:26.617 [main] INFO - 6. Connection.new Connection returned 
+
+15:47:26.629 [main] INFO - 6. Connection closed. {executed in 8ms} 
+
+15:47:26.637 [main] INFO - 6. Connection.close() returned 
+
+15:47:26.824 [main] INFO - 7. Connection opened. {executed in 178ms} 
+
+15:47:26.824 [main] INFO - 7. Connection.new Connection returned 
+
+15:47:26.932 [main] INFO - 8. Connection opened. {executed in 106ms} 
+
+15:47:26.933 [main] INFO - 8. Connection.new Connection returned 
+
+15:47:27.021 [main] INFO - 9. Connection opened. {executed in 87ms} 
+
+15:47:27.021 [main] INFO - 9. Connection.new Connection returned 
+
+15:47:27.022 [main] INFO - 9. Connection closed. {executed in 1ms} 
+
+15:47:27.024 [main] INFO - 9. Connection.close() returned 
+
+15:47:27.024 [main] INFO - 9. Connection closed. {executed in 0ms} 
+
+15:47:27.024 [main] INFO - 9. Connection.close() returned 
+
+15:47:27.175 [main] INFO - 10. Connection opened. {executed in 150ms} 
+
+15:47:27.175 [main] INFO - 10. Connection.new Connection returned 
+
+15:47:27.176 [main] INFO - 8. Connection closed. {executed in 0ms} 
+
+15:47:27.176 [main] INFO - 8. Connection.close() returned 
+
+15:47:27.503 [main] INFO - 11. Connection opened. {executed in 326ms} 
+
+15:47:27.503 [main] INFO - 11. Connection.new Connection returned 
+
+15:47:27.504 [main] INFO - 11. Connection closed. {executed in 0ms} 
+
+15:47:27.504 [main] INFO - 11. Connection.close() returned 
+
+15:47:27.505 [main] INFO - 11. Connection closed. {executed in 0ms} 
+
+15:47:27.505 [main] INFO - 11. Connection.close() returned 
+
+15:47:27.505 [main] INFO - 11. Connection closed. {executed in 0ms} 
+
+15:47:27.505 [main] INFO - 11. Connection.close() returned 
+
+15:47:27.619 [main] INFO - 12. Connection opened. {executed in 113ms} 
+
+15:47:27.619 [main] INFO - 12. Connection.new Connection returned 
+
+15:47:27.799 [main] INFO - 13. Connection opened. {executed in 180ms} 
+
+15:47:27.799 [main] INFO - 13. Connection.new Connection returned 
+
+15:47:27.800 [main] INFO - 13. Connection closed. {executed in 0ms} 
+
+15:47:27.800 [main] INFO - 13. Connection.close() returned 
+
+15:47:27.923 [main] INFO - 14. Connection opened. {executed in 122ms} 
+
+15:47:27.923 [main] INFO - 14. Connection.new Connection returned 
+
+15:47:27.924 [main] INFO - 13. Connection closed. {executed in 0ms} 
+
+15:47:27.924 [main] INFO - 13. Connection.close() returned 
+
+15:47:28.014 [main] INFO - 15. Connection opened. {executed in 88ms} 
+
+15:47:28.014 [main] INFO - 15. Connection.new Connection returned 
+
+15:47:28.237 [main] INFO - 16. Connection opened. {executed in 217ms} 
+
+15:47:28.250 [main] INFO - 16. Connection.new Connection returned 
+
+15:47:28.377 [main] INFO - 17. Connection opened. {executed in 126ms} 
+
+15:47:28.380 [main] INFO - 17. Connection.new Connection returned 
+
+15:47:28.410 [main] INFO - 17. Statement.new Statement returned 
+
+15:47:28.418 [main] INFO - 17. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@10e41621
+
+15:47:28.418 [main] INFO - 17. Connection.getAutoCommit() returned true
+
+15:47:28.436 [main] INFO - 17. DROP FUNCTION IF EXISTS test_blob(REFCURSOR, int4) CASCADE  {executed in 18 ms}
+
+15:47:28.437 [main] INFO - 17. Statement.executeUpdate(DROP FUNCTION IF EXISTS test_blob(REFCURSOR, int4) CASCADE) returned 0
+
+15:47:28.437 [main] INFO - 17. Statement.close() returned 
+
+15:47:28.523 [main] INFO - 18. Connection opened. {executed in 85ms} 
+
+15:47:28.523 [main] INFO - 18. Connection.new Connection returned 
+
+15:47:28.618 [main] INFO - 19. Connection opened. {executed in 93ms} 
+
+15:47:28.621 [main] INFO - 19. Connection.new Connection returned 
+
+15:47:28.625 [main] INFO - 16. Statement.new Statement returned 
+
+15:47:28.626 [main] INFO - 16. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@9225652
+
+15:47:28.654 [main] ERROR - 16. Statement.executeUpdate(CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN  SELECT * FROM pg_catalog.pg_tables; END; $$ LANGUAGE plpgsql; LANGUAGE SQL) FAILED! CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN SELECT * FROM pg_catalog.pg_tables; 
+END; $$ LANGUAGE plpgsql; LANGUAGE SQL  {FAILED after 25 ms}
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:268)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.executeUpdate(StatementSpy.java:767)
+	at demo.util.PostgresTestUtil.createFunction(PostgresTestUtil.java:633)
+	at demo.state.Action$11.invoke(Action.java:206)
+	at demo.test.StateMachineTest.test_1(StateMachineTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+15:47:28.666 [main] INFO - 16. Statement.close() returned 
+
+15:47:28.769 [main] INFO - 20. Connection opened. {executed in 100ms} 
+
+15:47:28.770 [main] INFO - 20. Connection.new Connection returned 
+
+15:47:28.777 [main] INFO - 20. Connection closed. {executed in 1ms} 
+
+15:47:28.777 [main] INFO - 20. Connection.close() returned 
+
+15:47:29.026 [main] INFO - 21. Connection opened. {executed in 246ms} 
+
+15:47:29.033 [main] INFO - 21. Connection.new Connection returned 
+
+15:47:29.050 [main] INFO - 20. Connection closed. {executed in 0ms} 
+
+15:47:29.050 [main] INFO - 20. Connection.close() returned 
+
+15:47:29.092 [main] INFO - 22. Connection opened. {executed in 39ms} 
+
+15:47:29.092 [main] INFO - 22. Connection.new Connection returned 
+
+15:47:29.093 [main] INFO - 22. Connection closed. {executed in 1ms} 
+
+15:47:29.093 [main] INFO - 22. Connection.close() returned 
+
+15:47:29.116 [main] INFO - 23. Connection opened. {executed in 22ms} 
+
+15:47:29.116 [main] INFO - 23. Connection.new Connection returned 
+
+15:47:29.246 [main] INFO - 24. Connection opened. {executed in 129ms} 
+
+15:47:29.247 [main] INFO - 24. Connection.new Connection returned 
+
+15:47:29.247 [main] INFO - 24. Statement.new Statement returned 
+
+15:47:29.248 [main] INFO - 24. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@21de60b4
+
+15:47:29.248 [main] INFO - 24. Connection.getAutoCommit() returned true
+
+15:47:29.270 [main] INFO - 24. DROP FUNCTION IF EXISTS test_blob(REFCURSOR, int4) CASCADE  {executed in 22 ms}
+
+15:47:29.270 [main] INFO - 24. Statement.executeUpdate(DROP FUNCTION IF EXISTS test_blob(REFCURSOR, int4) CASCADE) returned 0
+
+15:47:29.271 [main] INFO - 24. Statement.close() returned 
+
+15:47:29.271 [main] INFO - 23. Statement.new Statement returned 
+
+15:47:29.271 [main] INFO - 23. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@c267ef4
+
+15:47:29.271 [main] INFO - 23. Connection.getAutoCommit() returned true
+
+15:47:29.274 [main] INFO - 23. DROP FUNCTION IF EXISTS test_blob(REFCURSOR, int4) CASCADE  {executed in 2 ms}
+
+15:47:29.274 [main] INFO - 23. Statement.executeUpdate(DROP FUNCTION IF EXISTS test_blob(REFCURSOR, int4) CASCADE) returned 0
+
+15:47:29.274 [main] INFO - 23. Statement.close() returned 
+
+15:47:29.385 [main] INFO - 25. Connection opened. {executed in 109ms} 
+
+15:47:29.386 [main] INFO - 25. Connection.new Connection returned 
+
+15:47:29.401 [main] INFO - 25. Connection closed. {executed in 13ms} 
+
+15:47:29.402 [main] INFO - 25. Connection.close() returned 
+
+15:47:29.404 [main] INFO - 25. Connection closed. {executed in 0ms} 
+
+15:47:29.404 [main] INFO - 25. Connection.close() returned 
+
+15:47:29.432 [main] INFO - 26. Connection opened. {executed in 27ms} 
+
+15:47:29.432 [main] INFO - 26. Connection.new Connection returned 
+
+15:47:29.433 [main] INFO - 26. Statement.new Statement returned 
+
+15:47:29.433 [main] INFO - 26. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@31d7b7bf
+
+15:47:29.433 [main] INFO - 26. Connection.getAutoCommit() returned true
+
+15:47:29.435 [main] INFO - 26. DROP FUNCTION IF EXISTS test_blob(REFCURSOR, int4) CASCADE  {executed in 2 ms}
+
+15:47:29.437 [main] INFO - 26. Statement.executeUpdate(DROP FUNCTION IF EXISTS test_blob(REFCURSOR, int4) CASCADE) returned 0
+
+15:47:29.445 [main] INFO - 26. Statement.close() returned 
+
+15:47:29.541 [main] INFO - 27. Connection opened. {executed in 94ms} 
+
+15:47:29.542 [main] INFO - 27. Connection.new Connection returned 
+
+15:47:29.688 [main] INFO - 28. Connection opened. {executed in 143ms} 
+
+15:47:29.688 [main] INFO - 28. Connection.new Connection returned 
+
+15:47:29.749 [main] INFO - 29. Connection opened. {executed in 60ms} 
+
+15:47:29.749 [main] INFO - 29. Connection.new Connection returned 
+
+15:47:29.813 [main] INFO - 30. Connection opened. {executed in 63ms} 
+
+15:47:29.814 [main] INFO - 30. Connection.new Connection returned 
+
+15:47:29.926 [main] INFO - 31. Connection opened. {executed in 108ms} 
+
+15:47:29.926 [main] INFO - 31. Connection.new Connection returned 
+
+15:47:29.958 [main] INFO - 32. Connection opened. {executed in 31ms} 
+
+15:47:29.961 [main] INFO - 32. Connection.new Connection returned 
+
+15:47:29.962 [main] INFO - 32. Statement.new Statement returned 
+
+15:47:29.963 [main] INFO - 32. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@1ddf84b8
+
+15:47:29.986 [main] ERROR - 32. Statement.executeUpdate(CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN  SELECT * FROM pg_catalog.pg_tables; END; $$ LANGUAGE plpgsql; LANGUAGE SQL) FAILED! CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN SELECT * FROM pg_catalog.pg_tables; 
+END; $$ LANGUAGE plpgsql; LANGUAGE SQL  {FAILED after 23 ms}
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:268)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.executeUpdate(StatementSpy.java:767)
+	at demo.util.PostgresTestUtil.createFunction(PostgresTestUtil.java:633)
+	at demo.state.Action$11.invoke(Action.java:206)
+	at demo.test.StateMachineTest.test_1(StateMachineTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+15:47:29.996 [main] INFO - 32. Statement.close() returned 
+
+15:47:30.121 [main] INFO - 33. Connection opened. {executed in 75ms} 
+
+15:47:30.126 [main] INFO - 33. Connection.new Connection returned 
+
+15:47:30.213 [main] INFO - 33. Connection closed. {executed in 4ms} 
+
+15:47:30.213 [main] INFO - 33. Connection.close() returned 
+
+15:47:30.353 [main] INFO - 34. Connection opened. {executed in 138ms} 
+
+15:47:30.362 [main] INFO - 34. Connection.new Connection returned 
+
+15:47:30.376 [main] INFO - 34. Connection closed. {executed in 2ms} 
+
+15:47:30.380 [main] INFO - 34. Connection.close() returned 
+
+15:47:30.381 [main] INFO - 34. Connection closed. {executed in 0ms} 
+
+15:47:30.381 [main] INFO - 34. Connection.close() returned 
+
+15:47:30.381 [main] INFO - 34. Connection closed. {executed in 0ms} 
+
+15:47:30.381 [main] INFO - 34. Connection.close() returned 
+
+15:47:30.516 [main] INFO - 35. Connection opened. {executed in 125ms} 
+
+15:47:30.516 [main] INFO - 35. Connection.new Connection returned 
+
+15:47:30.697 [main] INFO - 36. Connection opened. {executed in 155ms} 
+
+15:47:30.698 [main] INFO - 36. Connection.new Connection returned 
+
+15:47:30.738 [main] INFO - 37. Connection opened. {executed in 39ms} 
+
+15:47:30.739 [main] INFO - 37. Connection.new Connection returned 
+
+15:47:30.741 [main] INFO - 37. Connection closed. {executed in 1ms} 
+
+15:47:30.741 [main] INFO - 37. Connection.close() returned 
+
+15:47:30.813 [main] INFO - 38. Connection opened. {executed in 72ms} 
+
+15:47:30.814 [main] INFO - 38. Connection.new Connection returned 
+
+15:47:31.113 [main] INFO - 39. Connection opened. {executed in 298ms} 
+
+15:47:31.114 [main] INFO - 39. Connection.new Connection returned 
+
+15:47:31.117 [main] INFO - 39. Connection closed. {executed in 1ms} 
+
+15:47:31.121 [main] INFO - 39. Connection.close() returned 
+
+15:47:31.123 [main] INFO - 39. Connection closed. {executed in 0ms} 
+
+15:47:31.123 [main] INFO - 39. Connection.close() returned 
+
+15:47:31.123 [main] INFO - 39. Connection closed. {executed in 0ms} 
+
+15:47:31.123 [main] INFO - 39. Connection.close() returned 
+
+15:47:31.310 [main] INFO - 40. Connection opened. {executed in 186ms} 
+
+15:47:31.312 [main] INFO - 40. Connection.new Connection returned 
+
+15:47:31.333 [main] INFO - 41. Connection opened. {executed in 19ms} 
+
+15:47:31.333 [main] INFO - 41. Connection.new Connection returned 
+
+15:47:31.334 [main] INFO - 40. Connection closed. {executed in 0ms} 
+
+15:47:31.334 [main] INFO - 40. Connection.close() returned 
+
+15:47:31.519 [main] INFO - 42. Connection opened. {executed in 185ms} 
+
+15:47:31.520 [main] INFO - 42. Connection.new Connection returned 
+
+15:47:31.575 [main] INFO - 43. Connection opened. {executed in 53ms} 
+
+15:47:31.576 [main] INFO - 43. Connection.new Connection returned 
+
+15:47:31.707 [main] INFO - 44. Connection opened. {executed in 131ms} 
+
+15:47:31.708 [main] INFO - 44. Connection.new Connection returned 
+
+15:47:31.710 [main] INFO - 44. Statement.new Statement returned 
+
+15:47:31.710 [main] INFO - 44. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@1817d444
+
+15:47:31.712 [main] INFO - 44. Statement.new Statement returned 
+
+15:47:31.712 [main] INFO - 44. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@6ca8564a
+
+15:47:31.712 [main] INFO - 44. Connection.getAutoCommit() returned true
+
+15:47:31.745 [main] INFO - 44. DROP SCHEMA IF EXISTS schema_0 CASCADE  {executed in 32 ms}
+
+15:47:31.751 [main] INFO - 44. Statement.executeUpdate(DROP SCHEMA IF EXISTS schema_0 CASCADE) returned 0
+
+15:47:31.757 [main] INFO - 44. Statement.close() returned 
+
+15:47:31.789 [main] INFO - 44. CREATE SCHEMA schema_0  {executed in 30 ms}
+
+15:47:31.790 [main] INFO - 44. Statement.executeUpdate(CREATE SCHEMA schema_0) returned 0
+
+15:47:31.798 [main] INFO - 44. Statement.close() returned 
+
+15:47:31.886 [main] INFO - 41. Statement.new Statement returned 
+
+15:47:31.901 [main] INFO - 41. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@39529185
+
+15:47:31.901 [main] INFO - 41. Statement.new Statement returned 
+
+15:47:31.901 [main] INFO - 41. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@72f926e6
+
+15:47:31.901 [main] INFO - 41. Connection.getAutoCommit() returned true
+
+15:47:31.925 [main] INFO - 41. DROP TABLE IF EXISTS table_0 CASCADE  {executed in 24 ms}
+
+15:47:31.926 [main] INFO - 41. Statement.executeUpdate(DROP TABLE IF EXISTS table_0 CASCADE) returned 0
+
+15:47:31.926 [main] INFO - 41. Statement.close() returned 
+
+15:47:31.940 [main] INFO - 41. CREATE TABLE table_0 (column_0 BOOLEAN)  {executed in 14 ms}
+
+15:47:31.941 [main] INFO - 41. Statement.executeUpdate(CREATE TABLE table_0 (column_0 BOOLEAN)) returned 0
+
+15:47:31.941 [main] INFO - 41. Statement.close() returned 
+
+15:47:31.977 [main] INFO - 45. Connection opened. {executed in 35ms} 
+
+15:47:31.977 [main] INFO - 45. Connection.new Connection returned 
+
+15:47:32.060 [main] INFO - 46. Connection opened. {executed in 83ms} 
+
+15:47:32.060 [main] INFO - 46. Connection.new Connection returned 
+
+15:47:32.061 [main] INFO - 45. Connection closed. {executed in 0ms} 
+
+15:47:32.063 [main] INFO - 45. Connection.close() returned 
+
+15:47:32.149 [main] INFO - 47. Connection opened. {executed in 81ms} 
+
+15:47:32.149 [main] INFO - 47. Connection.new Connection returned 
+
+15:47:32.154 [main] INFO - 47. Connection closed. {executed in 4ms} 
+
+15:47:32.154 [main] INFO - 47. Connection.close() returned 
+
+15:47:32.290 [main] INFO - 48. Connection opened. {executed in 135ms} 
+
+15:47:32.294 [main] INFO - 48. Connection.new Connection returned 
+
+15:47:32.297 [main] INFO - 48. Statement.new Statement returned 
+
+15:47:32.297 [main] INFO - 48. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@31c88ec8
+
+15:47:32.297 [main] INFO - 48. Statement.new Statement returned 
+
+15:47:32.297 [main] INFO - 48. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@1cbbffcd
+
+15:47:32.297 [main] INFO - 48. Connection.getAutoCommit() returned true
+
+15:47:32.344 [main] INFO - 48. DROP SCHEMA IF EXISTS schema_0 CASCADE  {executed in 39 ms}
+
+15:47:32.344 [main] INFO - 48. Statement.executeUpdate(DROP SCHEMA IF EXISTS schema_0 CASCADE) returned 0
+
+15:47:32.344 [main] INFO - 48. Statement.close() returned 
+
+15:47:32.347 [main] INFO - 48. CREATE SCHEMA schema_0  {executed in 3 ms}
+
+15:47:32.347 [main] INFO - 48. Statement.executeUpdate(CREATE SCHEMA schema_0) returned 0
+
+15:47:32.347 [main] INFO - 48. Statement.close() returned 
+
+15:47:32.390 [main] INFO - 49. Connection opened. {executed in 42ms} 
+
+15:47:32.390 [main] INFO - 49. Connection.new Connection returned 
+
+15:47:32.436 [main] INFO - 50. Connection opened. {executed in 45ms} 
+
+15:47:32.437 [main] INFO - 50. Connection.new Connection returned 
+
+15:47:32.656 [main] INFO - 51. Connection opened. {executed in 217ms} 
+
+15:47:32.657 [main] INFO - 51. Connection.new Connection returned 
+
+15:47:32.658 [main] INFO - 51. Connection closed. {executed in 1ms} 
+
+15:47:32.659 [main] INFO - 51. Connection.close() returned 
+
+15:47:32.661 [main] INFO - 50. Connection closed. {executed in 2ms} 
+
+15:47:32.662 [main] INFO - 50. Connection.close() returned 
+
+15:47:32.796 [main] INFO - 52. Connection opened. {executed in 128ms} 
+
+15:47:32.796 [main] INFO - 52. Connection.new Connection returned 
+
+15:47:32.881 [main] INFO - 53. Connection opened. {executed in 80ms} 
+
+15:47:32.881 [main] INFO - 53. Connection.new Connection returned 
+
+15:47:32.882 [main] INFO - 52. Connection closed. {executed in 1ms} 
+
+15:47:32.883 [main] INFO - 52. Connection.close() returned 
+
+15:47:32.883 [main] INFO - 50. Connection closed. {executed in 0ms} 
+
+15:47:32.883 [main] INFO - 50. Connection.close() returned 
+
+15:47:33.046 [main] INFO - 54. Connection opened. {executed in 162ms} 
+
+15:47:33.046 [main] INFO - 54. Connection.new Connection returned 
+
+15:47:33.046 [main] INFO - 54. Connection closed. {executed in 0ms} 
+
+15:47:33.046 [main] INFO - 54. Connection.close() returned 
+
+15:47:33.102 [main] INFO - 55. Connection opened. {executed in 55ms} 
+
+15:47:33.103 [main] INFO - 55. Connection.new Connection returned 
+
+15:47:33.103 [main] INFO - 55. Statement.new Statement returned 
+
+15:47:33.104 [main] INFO - 55. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@481a996b
+
+15:47:33.108 [main] ERROR - 55. Statement.executeUpdate(CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN  SELECT * FROM pg_catalog.pg_tables; END; $$ LANGUAGE plpgsql; LANGUAGE SQL) FAILED! CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN SELECT * FROM pg_catalog.pg_tables; 
+END; $$ LANGUAGE plpgsql; LANGUAGE SQL  {FAILED after 4 ms}
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:268)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.executeUpdate(StatementSpy.java:767)
+	at demo.util.PostgresTestUtil.createFunction(PostgresTestUtil.java:633)
+	at demo.state.Action$11.invoke(Action.java:206)
+	at demo.test.StateMachineTest.test_1(StateMachineTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+15:47:33.109 [main] INFO - 55. Statement.close() returned 
+
+15:47:33.145 [main] INFO - 56. Connection opened. {executed in 35ms} 
+
+15:47:33.145 [main] INFO - 56. Connection.new Connection returned 
+
+15:47:33.243 [main] INFO - 57. Connection opened. {executed in 96ms} 
+
+15:47:33.246 [main] INFO - 57. Connection.new Connection returned 
+
+15:47:33.267 [main] INFO - 57. Connection closed. {executed in 12ms} 
+
+15:47:33.272 [main] INFO - 57. Connection.close() returned 
+
+15:47:33.276 [main] INFO - 57. Connection closed. {executed in 0ms} 
+
+15:47:33.276 [main] INFO - 57. Connection.close() returned 
+
+15:47:33.334 [main] INFO - 58. Connection opened. {executed in 58ms} 
+
+15:47:33.334 [main] INFO - 58. Connection.new Connection returned 
+
+15:47:33.467 [main] INFO - 59. Connection opened. {executed in 131ms} 
+
+15:47:33.476 [main] INFO - 59. Connection.new Connection returned 
+
+15:47:33.604 [main] INFO - 60. Connection opened. {executed in 92ms} 
+
+15:47:33.606 [main] INFO - 60. Connection.new Connection returned 
+
+15:47:33.606 [main] INFO - 60. Statement.new Statement returned 
+
+15:47:33.606 [main] INFO - 60. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@647e447
+
+15:47:33.608 [main] ERROR - 60. Statement.executeUpdate(CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN  SELECT * FROM pg_catalog.pg_tables; END; $$ LANGUAGE plpgsql; LANGUAGE SQL) FAILED! CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN SELECT * FROM pg_catalog.pg_tables; 
+END; $$ LANGUAGE plpgsql; LANGUAGE SQL  {FAILED after 2 ms}
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:268)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.executeUpdate(StatementSpy.java:767)
+	at demo.util.PostgresTestUtil.createFunction(PostgresTestUtil.java:633)
+	at demo.state.Action$11.invoke(Action.java:206)
+	at demo.test.StateMachineTest.test_1(StateMachineTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+15:47:33.609 [main] INFO - 60. Statement.close() returned 
+
+15:47:33.708 [main] INFO - 61. Connection opened. {executed in 94ms} 
+
+15:47:33.708 [main] INFO - 61. Connection.new Connection returned 
+
+15:47:33.821 [main] INFO - 62. Connection opened. {executed in 112ms} 
+
+15:47:33.821 [main] INFO - 62. Connection.new Connection returned 
+
+15:47:33.823 [main] INFO - 62. Connection closed. {executed in 1ms} 
+
+15:47:33.823 [main] INFO - 62. Connection.close() returned 
+
+15:47:34.003 [main] INFO - 63. Connection opened. {executed in 179ms} 
+
+15:47:34.003 [main] INFO - 63. Connection.new Connection returned 
+
+15:47:34.004 [main] ERROR - 62. Connection.createStatement()
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:956)
+	at org.postgresql.jdbc.PgConnection.createStatement(PgConnection.java:1825)
+	at org.postgresql.jdbc.PgConnection.createStatement(PgConnection.java:486)
+	at net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy.createStatement(ConnectionSpy.java:410)
+	at demo.util.PostgresTestUtil.createTable(PostgresTestUtil.java:408)
+	at demo.state.Action$7.invoke(Action.java:140)
+	at demo.test.StateMachineTest.test_1(StateMachineTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+15:47:34.065 [main] INFO - 64. Connection opened. {executed in 58ms} 
+
+15:47:34.065 [main] INFO - 64. Connection.new Connection returned 
+
+15:47:34.174 [main] INFO - 65. Connection opened. {executed in 108ms} 
+
+15:47:34.184 [main] INFO - 65. Connection.new Connection returned 
+
+15:47:34.195 [main] INFO - 64. Connection closed. {executed in 10ms} 
+
+15:47:34.195 [main] INFO - 64. Connection.close() returned 
+
+15:47:34.236 [main] INFO - 66. Connection opened. {executed in 39ms} 
+
+15:47:34.237 [main] INFO - 66. Connection.new Connection returned 
+
+15:47:34.239 [main] INFO - 66. Connection closed. {executed in 1ms} 
+
+15:47:34.239 [main] INFO - 66. Connection.close() returned 
+
+15:47:34.458 [main] INFO - 67. Connection opened. {executed in 217ms} 
+
+15:47:34.481 [main] INFO - 67. Connection.new Connection returned 
+
+15:47:34.487 [main] INFO - 67. Statement.new Statement returned 
+
+15:47:34.487 [main] INFO - 67. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@130161f7
+
+15:47:34.516 [main] ERROR - 67. Statement.executeUpdate(CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN  SELECT * FROM pg_catalog.pg_tables; END; $$ LANGUAGE plpgsql; LANGUAGE SQL) FAILED! CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN SELECT * FROM pg_catalog.pg_tables; 
+END; $$ LANGUAGE plpgsql; LANGUAGE SQL  {FAILED after 29 ms}
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:268)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.executeUpdate(StatementSpy.java:767)
+	at demo.util.PostgresTestUtil.createFunction(PostgresTestUtil.java:633)
+	at demo.state.Action$11.invoke(Action.java:206)
+	at demo.test.StateMachineTest.test_1(StateMachineTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+15:47:34.554 [main] INFO - 67. Statement.close() returned 
+
+15:47:34.612 [main] INFO - 68. Connection opened. {executed in 38ms} 
+
+15:47:34.613 [main] INFO - 68. Connection.new Connection returned 
+
+15:47:34.831 [main] INFO - 69. Connection opened. {executed in 216ms} 
+
+15:47:34.832 [main] INFO - 69. Connection.new Connection returned 
+
+15:47:34.832 [main] INFO - 69. Statement.new Statement returned 
+
+15:47:34.833 [main] INFO - 69. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@708f5957
+
+15:47:34.833 [main] INFO - 69. Statement.new Statement returned 
+
+15:47:34.833 [main] INFO - 69. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@68999068
+
+15:47:34.833 [main] INFO - 69. Connection.getAutoCommit() returned true
+
+15:47:34.840 [main] INFO - 69. DROP TABLE IF EXISTS table_0 CASCADE  {executed in 7 ms}
+
+15:47:34.841 [main] INFO - 69. Statement.executeUpdate(DROP TABLE IF EXISTS table_0 CASCADE) returned 0
+
+15:47:34.842 [main] INFO - 69. Statement.close() returned 
+
+15:47:34.858 [main] INFO - 69. CREATE TABLE table_0 (column_0 BOOLEAN)  {executed in 16 ms}
+
+15:47:34.859 [main] INFO - 69. Statement.executeUpdate(CREATE TABLE table_0 (column_0 BOOLEAN)) returned 0
+
+15:47:34.859 [main] INFO - 69. Statement.close() returned 
+
+15:47:34.916 [main] INFO - 70. Connection opened. {executed in 55ms} 
+
+15:47:34.921 [main] INFO - 70. Connection.new Connection returned 
+
+15:47:35.028 [main] INFO - 71. Connection opened. {executed in 101ms} 
+
+15:47:35.029 [main] INFO - 71. Connection.new Connection returned 
+
+15:47:35.175 [main] INFO - 72. Connection opened. {executed in 146ms} 
+
+15:47:35.175 [main] INFO - 72. Connection.new Connection returned 
+
+15:47:35.440 [main] INFO - 73. Connection opened. {executed in 99ms} 
+
+15:47:35.441 [main] INFO - 73. Connection.new Connection returned 
+
+15:47:35.490 [main] INFO - 74. Connection opened. {executed in 49ms} 
+
+15:47:35.493 [main] INFO - 74. Connection.new Connection returned 
+
+15:47:35.609 [main] INFO - 75. Connection opened. {executed in 110ms} 
+
+15:47:35.609 [main] INFO - 75. Connection.new Connection returned 
+
+15:47:35.672 [main] INFO - 76. Connection opened. {executed in 62ms} 
+
+15:47:35.674 [main] INFO - 76. Connection.new Connection returned 
+
+15:47:35.751 [main] INFO - 77. Connection opened. {executed in 76ms} 
+
+15:47:35.754 [main] INFO - 77. Connection.new Connection returned 
+
+15:47:35.910 [main] INFO - 78. Connection opened. {executed in 150ms} 
+
+15:47:35.918 [main] INFO - 78. Connection.new Connection returned 
+
+15:47:35.932 [main] INFO - 78. Connection closed. {executed in 6ms} 
+
+15:47:35.932 [main] INFO - 78. Connection.close() returned 
+
+15:47:36.061 [main] INFO - 79. Connection opened. {executed in 129ms} 
+
+15:47:36.062 [main] INFO - 79. Connection.new Connection returned 
+
+15:47:36.215 [main] INFO - 80. Connection opened. {executed in 152ms} 
+
+15:47:36.215 [main] INFO - 80. Connection.new Connection returned 
+
+15:47:36.373 [main] INFO - 81. Connection opened. {executed in 158ms} 
+
+15:47:36.377 [main] INFO - 81. Connection.new Connection returned 
+
+15:47:36.641 [main] INFO - 82. Connection opened. {executed in 106ms} 
+
+15:47:36.641 [main] INFO - 82. Connection.new Connection returned 
+
+15:47:36.763 [main] INFO - 83. Connection opened. {executed in 120ms} 
+
+15:47:36.763 [main] INFO - 83. Connection.new Connection returned 
+
+15:47:36.845 [main] INFO - 84. Connection opened. {executed in 76ms} 
+
+15:47:36.846 [main] INFO - 84. Connection.new Connection returned 
+
+15:47:36.920 [main] INFO - 85. Connection opened. {executed in 73ms} 
+
+15:47:36.920 [main] INFO - 85. Connection.new Connection returned 
+
+15:47:36.921 [main] INFO - 84. Connection closed. {executed in 1ms} 
+
+15:47:36.921 [main] INFO - 84. Connection.close() returned 
+
+15:47:36.960 [main] INFO - 86. Connection opened. {executed in 39ms} 
+
+15:47:36.960 [main] INFO - 86. Connection.new Connection returned 
+
+15:47:37.073 [main] INFO - 87. Connection opened. {executed in 112ms} 
+
+15:47:37.074 [main] INFO - 87. Connection.new Connection returned 
+
+15:47:37.075 [main] INFO - 85. Statement.new Statement returned 
+
+15:47:37.075 [main] INFO - 85. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@61df66b6
+
+15:47:37.075 [main] INFO - 85. Connection.getAutoCommit() returned true
+
+15:47:37.077 [main] INFO - 85. DROP FUNCTION IF EXISTS test_blob(REFCURSOR, int4) CASCADE  {executed in 2 ms}
+
+15:47:37.078 [main] INFO - 85. Statement.executeUpdate(DROP FUNCTION IF EXISTS test_blob(REFCURSOR, int4) CASCADE) returned 0
+
+15:47:37.078 [main] INFO - 85. Statement.close() returned 
+
+15:47:37.094 [main] INFO - 86. Connection closed. {executed in 7ms} 
+
+15:47:37.095 [main] INFO - 86. Connection.close() returned 
+
+15:47:37.161 [main] INFO - 88. Connection opened. {executed in 57ms} 
+
+15:47:37.161 [main] INFO - 88. Connection.new Connection returned 
+
+15:47:37.394 [main] INFO - 89. Connection opened. {executed in 216ms} 
+
+15:47:37.395 [main] INFO - 89. Connection.new Connection returned 
+
+15:47:37.395 [main] INFO - 89. Statement.new Statement returned 
+
+15:47:37.396 [main] INFO - 89. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@16ec5519
+
+15:47:37.396 [main] INFO - 89. Connection.getAutoCommit() returned true
+
+15:47:37.483 [main] INFO - 89. DROP FUNCTION IF EXISTS test_blob(REFCURSOR, int4) CASCADE  {executed in 87 ms}
+
+15:47:37.493 [main] INFO - 89. Statement.executeUpdate(DROP FUNCTION IF EXISTS test_blob(REFCURSOR, int4) CASCADE) returned 0
+
+15:47:37.493 [main] INFO - 89. Statement.close() returned 
+
+15:47:37.494 [main] INFO - 89. Statement.new Statement returned 
+
+15:47:37.494 [main] INFO - 89. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@188715b5
+
+15:47:37.494 [main] INFO - 89. Statement.new Statement returned 
+
+15:47:37.494 [main] INFO - 89. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@1ea9f6af
+
+15:47:37.494 [main] INFO - 89. Connection.getAutoCommit() returned true
+
+15:47:37.504 [main] INFO - 89. DROP SCHEMA IF EXISTS schema_42 CASCADE  {executed in 10 ms}
+
+15:47:37.505 [main] INFO - 89. Statement.executeUpdate(DROP SCHEMA IF EXISTS schema_42 CASCADE) returned 0
+
+15:47:37.505 [main] INFO - 89. Statement.close() returned 
+
+15:47:37.528 [main] INFO - 89. CREATE SCHEMA schema_42  {executed in 21 ms}
+
+15:47:37.529 [main] INFO - 89. Statement.executeUpdate(CREATE SCHEMA schema_42) returned 0
+
+15:47:37.529 [main] INFO - 89. Statement.close() returned 
+
+15:47:37.536 [main] INFO - 89. Statement.new Statement returned 
+
+15:47:37.536 [main] INFO - 89. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@7714e963
+
+15:47:37.536 [main] INFO - 89. Statement.new Statement returned 
+
+15:47:37.536 [main] INFO - 89. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@20ce78ec
+
+15:47:37.536 [main] INFO - 89. Connection.getAutoCommit() returned true
+
+15:47:37.542 [main] INFO - 89. DROP SCHEMA IF EXISTS schema_0 CASCADE  {executed in 5 ms}
+
+15:47:37.545 [main] INFO - 89. Statement.executeUpdate(DROP SCHEMA IF EXISTS schema_0 CASCADE) returned 0
+
+15:47:37.545 [main] INFO - 89. Statement.close() returned 
+
+15:47:37.554 [main] INFO - 89. CREATE SCHEMA schema_0  {executed in 9 ms}
+
+15:47:37.555 [main] INFO - 89. Statement.executeUpdate(CREATE SCHEMA schema_0) returned 0
+
+15:47:37.555 [main] INFO - 89. Statement.close() returned 
+
+15:47:37.567 [main] INFO - 89. Connection closed. {executed in 8ms} 
+
+15:47:37.572 [main] INFO - 89. Connection.close() returned 
+
+15:47:37.788 [main] INFO - 90. Connection opened. {executed in 210ms} 
+
+15:47:37.797 [main] INFO - 90. Connection.new Connection returned 
+
+15:47:37.897 [main] INFO - 91. Connection opened. {executed in 98ms} 
+
+15:47:37.901 [main] INFO - 91. Connection.new Connection returned 
+
+15:47:38.096 [main] INFO - 92. Connection opened. {executed in 178ms} 
+
+15:47:38.096 [main] INFO - 92. Connection.new Connection returned 
+
+15:47:38.098 [main] INFO - 92. Statement.new Statement returned 
+
+15:47:38.099 [main] INFO - 92. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@6eda5c9
+
+15:47:38.099 [main] INFO - 92. Statement.new Statement returned 
+
+15:47:38.099 [main] INFO - 92. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@55b7a4e0
+
+15:47:38.099 [main] INFO - 92. Connection.getAutoCommit() returned true
+
+15:47:38.100 [main] INFO - 92. DROP SCHEMA IF EXISTS schema_0 CASCADE  {executed in 1 ms}
+
+15:47:38.101 [main] INFO - 92. Statement.executeUpdate(DROP SCHEMA IF EXISTS schema_0 CASCADE) returned 0
+
+15:47:38.101 [main] INFO - 92. Statement.close() returned 
+
+15:47:38.102 [main] INFO - 92. CREATE SCHEMA schema_0  {executed in 1 ms}
+
+15:47:38.102 [main] INFO - 92. Statement.executeUpdate(CREATE SCHEMA schema_0) returned 0
+
+15:47:38.102 [main] INFO - 92. Statement.close() returned 
+
+15:47:38.104 [main] INFO - 92. Connection closed. {executed in 2ms} 
+
+15:47:38.104 [main] INFO - 92. Connection.close() returned 
+
+15:47:38.104 [main] INFO - 91. Connection closed. {executed in 0ms} 
+
+15:47:38.104 [main] INFO - 91. Connection.close() returned 
+
+15:47:38.162 [main] INFO - 93. Connection opened. {executed in 54ms} 
+
+15:47:38.162 [main] INFO - 93. Connection.new Connection returned 
+
+15:47:38.249 [main] INFO - 94. Connection opened. {executed in 86ms} 
+
+15:47:38.250 [main] INFO - 94. Connection.new Connection returned 
+
+15:47:38.392 [main] INFO - 95. Connection opened. {executed in 141ms} 
+
+15:47:38.393 [main] INFO - 95. Connection.new Connection returned 
+
+15:47:38.449 [main] INFO - 96. Connection opened. {executed in 40ms} 
+
+15:47:38.450 [main] INFO - 96. Connection.new Connection returned 
+
+15:47:38.451 [main] INFO - 94. Statement.new Statement returned 
+
+15:47:38.451 [main] INFO - 94. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@192d43ce
+
+15:47:38.451 [main] INFO - 94. Statement.new Statement returned 
+
+15:47:38.451 [main] INFO - 94. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@72057ecf
+
+15:47:38.451 [main] INFO - 94. Connection.getAutoCommit() returned true
+
+15:47:38.454 [main] INFO - 94. DROP SCHEMA IF EXISTS schema_0 CASCADE  {executed in 3 ms}
+
+15:47:38.454 [main] INFO - 94. Statement.executeUpdate(DROP SCHEMA IF EXISTS schema_0 CASCADE) returned 0
+
+15:47:38.455 [main] INFO - 94. Statement.close() returned 
+
+15:47:38.456 [main] INFO - 94. CREATE SCHEMA schema_0  {executed in 1 ms}
+
+15:47:38.456 [main] INFO - 94. Statement.executeUpdate(CREATE SCHEMA schema_0) returned 0
+
+15:47:38.457 [main] INFO - 94. Statement.close() returned 
+
+15:47:38.457 [main] INFO - 93. Statement.new Statement returned 
+
+15:47:38.457 [main] INFO - 93. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@1afd44cb
+
+15:47:38.459 [main] ERROR - 93. Statement.executeUpdate(CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN  SELECT * FROM pg_catalog.pg_tables; END; $$ LANGUAGE plpgsql; LANGUAGE SQL) FAILED! CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN SELECT * FROM pg_catalog.pg_tables; 
+END; $$ LANGUAGE plpgsql; LANGUAGE SQL  {FAILED after 2 ms}
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:268)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.executeUpdate(StatementSpy.java:767)
+	at demo.util.PostgresTestUtil.createFunction(PostgresTestUtil.java:633)
+	at demo.state.Action$11.invoke(Action.java:206)
+	at demo.test.StateMachineTest.test_1(StateMachineTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+15:47:38.464 [main] INFO - 93. Statement.close() returned 
+
+15:47:38.645 [main] INFO - 97. Connection opened. {executed in 87ms} 
+
+15:47:38.646 [main] INFO - 97. Connection.new Connection returned 
+
+15:47:38.854 [main] INFO - 98. Connection opened. {executed in 137ms} 
+
+15:47:38.855 [main] INFO - 98. Connection.new Connection returned 
+
+15:47:38.855 [main] INFO - 98. Connection closed. {executed in 0ms} 
+
+15:47:38.857 [main] INFO - 98. Connection.close() returned 
+
+15:47:39.010 [main] INFO - 99. Connection opened. {executed in 151ms} 
+
+15:47:39.011 [main] INFO - 99. Connection.new Connection returned 
+
+15:47:39.084 [main] INFO - 100. Connection opened. {executed in 73ms} 
+
+15:47:39.088 [main] INFO - 100. Connection.new Connection returned 
+
+15:47:39.089 [main] INFO - 100. Connection closed. {executed in 1ms} 
+
+15:47:39.089 [main] INFO - 100. Connection.close() returned 
+
+15:47:39.089 [main] INFO - 100. Connection closed. {executed in 0ms} 
+
+15:47:39.092 [main] INFO - 100. Connection.close() returned 
+
+15:47:39.093 [main] INFO - 99. Connection closed. {executed in 0ms} 
+
+15:47:39.093 [main] INFO - 99. Connection.close() returned 
+
+15:47:39.093 [main] INFO - 99. Connection closed. {executed in 0ms} 
+
+15:47:39.093 [main] INFO - 99. Connection.close() returned 
+
+15:47:39.261 [main] INFO - 101. Connection opened. {executed in 168ms} 
+
+15:47:39.262 [main] INFO - 101. Connection.new Connection returned 
+
+15:47:39.296 [main] INFO - 102. Connection opened. {executed in 33ms} 
+
+15:47:39.296 [main] INFO - 102. Connection.new Connection returned 
+
+15:47:39.494 [main] INFO - 103. Connection opened. {executed in 114ms} 
+
+15:47:39.498 [main] INFO - 103. Connection.new Connection returned 
+
+15:47:39.498 [main] INFO - 103. Connection closed. {executed in 0ms} 
+
+15:47:39.508 [main] INFO - 103. Connection.close() returned 
+
+15:47:39.622 [main] INFO - 104. Connection opened. {executed in 91ms} 
+
+15:47:39.622 [main] INFO - 104. Connection.new Connection returned 
+
+15:47:39.778 [main] INFO - 105. Connection opened. {executed in 156ms} 
+
+15:47:39.779 [main] INFO - 105. Connection.new Connection returned 
+
+15:47:39.896 [main] INFO - 106. Connection opened. {executed in 116ms} 
+
+15:47:39.897 [main] INFO - 106. Connection.new Connection returned 
+
+15:47:39.902 [main] INFO - 104. Connection closed. {executed in 4ms} 
+
+15:47:39.902 [main] INFO - 104. Connection.close() returned 
+
+15:47:39.949 [main] INFO - 107. Connection opened. {executed in 46ms} 
+
+15:47:39.949 [main] INFO - 107. Connection.new Connection returned 
+
+15:47:39.950 [main] INFO - 106. Connection closed. {executed in 0ms} 
+
+15:47:39.950 [main] INFO - 106. Connection.close() returned 
+
+15:47:40.085 [main] INFO - 108. Connection opened. {executed in 134ms} 
+
+15:47:40.085 [main] INFO - 108. Connection.new Connection returned 
+
+15:47:40.087 [main] INFO - 108. Connection closed. {executed in 1ms} 
+
+15:47:40.087 [main] INFO - 108. Connection.close() returned 
+
+15:47:40.267 [main] INFO - 109. Connection opened. {executed in 139ms} 
+
+15:47:40.268 [main] INFO - 109. Connection.new Connection returned 
+
+15:47:40.269 [main] INFO - 109. Connection closed. {executed in 1ms} 
+
+15:47:40.269 [main] INFO - 109. Connection.close() returned 
+
+15:47:40.269 [main] INFO - 109. Connection closed. {executed in 0ms} 
+
+15:47:40.269 [main] INFO - 109. Connection.close() returned 
+
+15:47:40.269 [main] INFO - 109. Connection closed. {executed in 0ms} 
+
+15:47:40.275 [main] INFO - 109. Connection.close() returned 
+
+15:47:40.406 [main] INFO - 110. Connection opened. {executed in 104ms} 
+
+15:47:40.421 [main] INFO - 110. Connection.new Connection returned 
+
+15:47:40.476 [main] INFO - 111. Connection opened. {executed in 55ms} 
+
+15:47:40.476 [main] INFO - 111. Connection.new Connection returned 
+
+15:47:40.551 [main] INFO - 112. Connection opened. {executed in 74ms} 
+
+15:47:40.551 [main] INFO - 112. Connection.new Connection returned 
+
+15:47:40.551 [main] INFO - 112. Connection closed. {executed in 0ms} 
+
+15:47:40.551 [main] INFO - 112. Connection.close() returned 
+
+15:47:40.551 [main] INFO - 110. Connection closed. {executed in 0ms} 
+
+15:47:40.551 [main] INFO - 110. Connection.close() returned 
+
+15:47:40.600 [main] INFO - 113. Connection opened. {executed in 48ms} 
+
+15:47:40.601 [main] INFO - 113. Connection.new Connection returned 
+
+15:47:40.749 [main] INFO - 114. Connection opened. {executed in 147ms} 
+
+15:47:40.749 [main] INFO - 114. Connection.new Connection returned 
+
+15:47:40.750 [main] INFO - 114. Statement.new Statement returned 
+
+15:47:40.750 [main] INFO - 114. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@43195e57
+
+15:47:40.757 [main] ERROR - 114. Statement.executeUpdate(CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN  SELECT * FROM pg_catalog.pg_tables; END; $$ LANGUAGE plpgsql; LANGUAGE SQL) FAILED! CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN SELECT * FROM pg_catalog.pg_tables; 
+END; $$ LANGUAGE plpgsql; LANGUAGE SQL  {FAILED after 6 ms}
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:268)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.executeUpdate(StatementSpy.java:767)
+	at demo.util.PostgresTestUtil.createFunction(PostgresTestUtil.java:633)
+	at demo.state.Action$11.invoke(Action.java:206)
+	at demo.test.StateMachineTest.test_1(StateMachineTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+15:47:40.769 [main] INFO - 114. Statement.close() returned 
+
+15:47:41.467 [main] INFO - 115. Connection opened. {executed in 159ms} 
+
+15:47:41.473 [main] INFO - 115. Connection.new Connection returned 
+
+15:47:41.488 [main] INFO - 115. Connection closed. {executed in 7ms} 
+
+15:47:41.493 [main] INFO - 115. Connection.close() returned 
+
+15:47:41.760 [main] INFO - 116. Connection opened. {executed in 89ms} 
+
+15:47:41.760 [main] INFO - 116. Connection.new Connection returned 
+
+15:47:41.761 [main] INFO - 116. Statement.new Statement returned 
+
+15:47:41.762 [main] INFO - 116. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@40ef3420
+
+15:47:41.762 [main] INFO - 116. Statement.new Statement returned 
+
+15:47:41.762 [main] INFO - 116. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@498d318c
+
+15:47:41.762 [main] INFO - 116. Connection.getAutoCommit() returned true
+
+15:47:41.791 [main] INFO - 116. DROP SCHEMA IF EXISTS schema_0 CASCADE  {executed in 29 ms}
+
+15:47:41.791 [main] INFO - 116. Statement.executeUpdate(DROP SCHEMA IF EXISTS schema_0 CASCADE) returned 0
+
+15:47:41.791 [main] INFO - 116. Statement.close() returned 
+
+15:47:41.792 [main] INFO - 116. CREATE SCHEMA schema_0  {executed in 1 ms}
+
+15:47:41.792 [main] INFO - 116. Statement.executeUpdate(CREATE SCHEMA schema_0) returned 0
+
+15:47:41.792 [main] INFO - 116. Statement.close() returned 
+
+15:47:41.848 [main] INFO - 117. Connection opened. {executed in 55ms} 
+
+15:47:41.848 [main] INFO - 117. Connection.new Connection returned 
+
+15:47:41.850 [main] INFO - 117. Statement.new Statement returned 
+
+15:47:41.850 [main] INFO - 117. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@6e171cd7
+
+15:47:41.863 [main] ERROR - 117. Statement.executeUpdate(CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN  SELECT * FROM pg_catalog.pg_tables; END; $$ LANGUAGE plpgsql; LANGUAGE SQL) FAILED! CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN SELECT * FROM pg_catalog.pg_tables; 
+END; $$ LANGUAGE plpgsql; LANGUAGE SQL  {FAILED after 12 ms}
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:268)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.executeUpdate(StatementSpy.java:767)
+	at demo.util.PostgresTestUtil.createFunction(PostgresTestUtil.java:633)
+	at demo.state.Action$11.invoke(Action.java:206)
+	at demo.test.StateMachineTest.test_1(StateMachineTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+15:47:41.872 [main] INFO - 117. Statement.close() returned 
+
+15:47:41.898 [main] INFO - 118. Connection opened. {executed in 20ms} 
+
+15:47:41.898 [main] INFO - 118. Connection.new Connection returned 
+
+15:47:41.906 [main] INFO - 118. Statement.new Statement returned 
+
+15:47:41.914 [main] INFO - 118. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@59fd97a8
+
+15:47:41.920 [main] INFO - 118. Statement.new Statement returned 
+
+15:47:41.928 [main] INFO - 118. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@f5ac9e4
+
+15:47:41.928 [main] INFO - 118. Connection.getAutoCommit() returned true
+
+15:47:41.946 [main] INFO - 118. DROP TABLE IF EXISTS table_0 CASCADE  {executed in 18 ms}
+
+15:47:41.947 [main] INFO - 118. Statement.executeUpdate(DROP TABLE IF EXISTS table_0 CASCADE) returned 0
+
+15:47:41.947 [main] INFO - 118. Statement.close() returned 
+
+15:47:41.960 [main] INFO - 118. CREATE TABLE table_0 (column_0 TEXT)  {executed in 13 ms}
+
+15:47:41.961 [main] INFO - 118. Statement.executeUpdate(CREATE TABLE table_0 (column_0 TEXT)) returned 0
+
+15:47:41.961 [main] INFO - 118. Statement.close() returned 
+
+15:47:41.962 [main] INFO - 118. Connection closed. {executed in 1ms} 
+
+15:47:41.962 [main] INFO - 118. Connection.close() returned 
+
+15:47:42.070 [main] INFO - 119. Connection opened. {executed in 107ms} 
+
+15:47:42.071 [main] INFO - 119. Connection.new Connection returned 
+
+15:47:42.177 [main] INFO - 120. Connection opened. {executed in 105ms} 
+
+15:47:42.178 [main] INFO - 120. Connection.new Connection returned 
+
+15:47:42.178 [main] INFO - 119. Statement.new Statement returned 
+
+15:47:42.178 [main] INFO - 119. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@123ef382
+
+15:47:42.192 [main] ERROR - 119. Statement.executeUpdate(CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN  SELECT * FROM pg_catalog.pg_tables; END; $$ LANGUAGE plpgsql; LANGUAGE SQL) FAILED! CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN SELECT * FROM pg_catalog.pg_tables; 
+END; $$ LANGUAGE plpgsql; LANGUAGE SQL  {FAILED after 10 ms}
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:268)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.executeUpdate(StatementSpy.java:767)
+	at demo.util.PostgresTestUtil.createFunction(PostgresTestUtil.java:633)
+	at demo.state.Action$11.invoke(Action.java:206)
+	at demo.test.StateMachineTest.test_1(StateMachineTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+15:47:42.213 [main] INFO - 119. Statement.close() returned 
+
+15:47:42.379 [main] INFO - 121. Connection opened. {executed in 158ms} 
+
+15:47:42.380 [main] INFO - 121. Connection.new Connection returned 
+
+15:47:42.436 [main] INFO - 122. Connection opened. {executed in 55ms} 
+
+15:47:42.436 [main] INFO - 122. Connection.new Connection returned 
+
+15:47:42.451 [main] INFO - 121. Connection closed. {executed in 14ms} 
+
+15:47:42.452 [main] INFO - 121. Connection.close() returned 
+
+15:47:42.495 [main] INFO - 123. Connection opened. {executed in 43ms} 
+
+15:47:42.495 [main] INFO - 123. Connection.new Connection returned 
+
+15:47:42.496 [main] INFO - 122. Connection closed. {executed in 0ms} 
+
+15:47:42.496 [main] INFO - 122. Connection.close() returned 
+
+15:47:42.496 [main] INFO - 122. Connection closed. {executed in 0ms} 
+
+15:47:42.496 [main] INFO - 122. Connection.close() returned 
+
+15:47:42.571 [main] INFO - 124. Connection opened. {executed in 74ms} 
+
+15:47:42.572 [main] INFO - 124. Connection.new Connection returned 
+
+15:47:42.579 [main] INFO - 124. Connection closed. {executed in 4ms} 
+
+15:47:42.580 [main] INFO - 124. Connection.close() returned 
+
+15:47:42.580 [main] INFO - 124. Connection closed. {executed in 0ms} 
+
+15:47:42.580 [main] INFO - 124. Connection.close() returned 
+
+15:47:42.767 [main] INFO - 125. Connection opened. {executed in 114ms} 
+
+15:47:42.768 [main] INFO - 125. Connection.new Connection returned 
+
+15:47:42.768 [main] INFO - 125. Statement.new Statement returned 
+
+15:47:42.768 [main] INFO - 125. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@61862a7f
+
+15:47:42.768 [main] INFO - 125. Statement.new Statement returned 
+
+15:47:42.768 [main] INFO - 125. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@441772e
+
+15:47:42.768 [main] INFO - 125. Connection.getAutoCommit() returned true
+
+15:47:42.790 [main] INFO - 125. DROP TABLE IF EXISTS table_0 CASCADE  {executed in 22 ms}
+
+15:47:42.794 [main] INFO - 125. Statement.executeUpdate(DROP TABLE IF EXISTS table_0 CASCADE) returned 0
+
+15:47:42.794 [main] INFO - 125. Statement.close() returned 
+
+15:47:42.848 [main] INFO - 125. CREATE TABLE table_0 (column_0 INT)  {executed in 54 ms}
+
+15:47:42.849 [main] INFO - 125. Statement.executeUpdate(CREATE TABLE table_0 (column_0 INT)) returned 0
+
+15:47:42.849 [main] INFO - 125. Statement.close() returned 
+
+15:47:42.902 [main] INFO - 126. Connection opened. {executed in 50ms} 
+
+15:47:42.903 [main] INFO - 126. Connection.new Connection returned 
+
+15:47:42.903 [main] INFO - 125. Statement.new Statement returned 
+
+15:47:42.903 [main] INFO - 125. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@7334aada
+
+15:47:42.908 [main] ERROR - 125. Statement.executeUpdate(CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN  SELECT * FROM pg_catalog.pg_tables; END; $$ LANGUAGE plpgsql; LANGUAGE SQL) FAILED! CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN SELECT * FROM pg_catalog.pg_tables; 
+END; $$ LANGUAGE plpgsql; LANGUAGE SQL  {FAILED after 5 ms}
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:268)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.executeUpdate(StatementSpy.java:767)
+	at demo.util.PostgresTestUtil.createFunction(PostgresTestUtil.java:633)
+	at demo.state.Action$11.invoke(Action.java:206)
+	at demo.test.StateMachineTest.test_1(StateMachineTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+15:47:42.909 [main] INFO - 125. Statement.close() returned 
+
+15:47:43.109 [main] INFO - 127. Connection opened. {executed in 95ms} 
+
+15:47:43.109 [main] INFO - 127. Connection.new Connection returned 
+
+15:47:43.320 [main] INFO - 128. Connection opened. {executed in 118ms} 
+
+15:47:43.321 [main] INFO - 128. Connection.new Connection returned 
+
+15:47:43.322 [main] INFO - 128. Connection closed. {executed in 0ms} 
+
+15:47:43.323 [main] INFO - 128. Connection.close() returned 
+
+15:47:43.401 [main] INFO - 129. Connection opened. {executed in 76ms} 
+
+15:47:43.402 [main] INFO - 129. Connection.new Connection returned 
+
+15:47:43.402 [main] INFO - 128. Connection closed. {executed in 0ms} 
+
+15:47:43.402 [main] INFO - 128. Connection.close() returned 
+
+15:47:43.508 [main] INFO - 130. Connection opened. {executed in 106ms} 
+
+15:47:43.509 [main] INFO - 130. Connection.new Connection returned 
+
+15:47:43.510 [main] INFO - 130. Statement.new Statement returned 
+
+15:47:43.510 [main] INFO - 130. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@42e99e4a
+
+15:47:43.510 [main] INFO - 130. Statement.new Statement returned 
+
+15:47:43.510 [main] INFO - 130. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@14dd9eb7
+
+15:47:43.510 [main] INFO - 130. Connection.getAutoCommit() returned true
+
+15:47:43.544 [main] INFO - 130. DROP SCHEMA IF EXISTS schema_0 CASCADE  {executed in 33 ms}
+
+15:47:43.545 [main] INFO - 130. Statement.executeUpdate(DROP SCHEMA IF EXISTS schema_0 CASCADE) returned 0
+
+15:47:43.545 [main] INFO - 130. Statement.close() returned 
+
+15:47:43.548 [main] INFO - 130. CREATE SCHEMA schema_0  {executed in 3 ms}
+
+15:47:43.548 [main] INFO - 130. Statement.executeUpdate(CREATE SCHEMA schema_0) returned 0
+
+15:47:43.548 [main] INFO - 130. Statement.close() returned 
+
+15:47:43.548 [main] INFO - 130. Statement.new Statement returned 
+
+15:47:43.549 [main] INFO - 130. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@52e6fdee
+
+15:47:43.549 [main] INFO - 130. Connection.getAutoCommit() returned true
+
+15:47:43.550 [main] INFO - 130. DROP FUNCTION IF EXISTS test_blob(REFCURSOR, int4) CASCADE  {executed in 1 ms}
+
+15:47:43.551 [main] INFO - 130. Statement.executeUpdate(DROP FUNCTION IF EXISTS test_blob(REFCURSOR, int4) CASCADE) returned 0
+
+15:47:43.551 [main] INFO - 130. Statement.close() returned 
+
+15:47:43.553 [main] INFO - 130. Statement.new Statement returned 
+
+15:47:43.553 [main] INFO - 130. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@62150f9e
+
+15:47:43.553 [main] INFO - 130. Statement.new Statement returned 
+
+15:47:43.553 [main] INFO - 130. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@1a451d4d
+
+15:47:43.553 [main] INFO - 130. Connection.getAutoCommit() returned true
+
+15:47:43.566 [main] INFO - 130. DROP TABLE IF EXISTS table_0 CASCADE  {executed in 13 ms}
+
+15:47:43.567 [main] INFO - 130. Statement.executeUpdate(DROP TABLE IF EXISTS table_0 CASCADE) returned 0
+
+15:47:43.567 [main] INFO - 130. Statement.close() returned 
+
+15:47:43.615 [main] INFO - 130. CREATE TABLE table_0 (column_0 INT, column_18 DOUBLE PRECISION, column_1 REAL)  {executed in 48 ms}
+
+15:47:43.626 [main] INFO - 130. Statement.executeUpdate(CREATE TABLE table_0 (column_0 INT, column_18 DOUBLE PRECISION, column_1 REAL)) returned 0
+
+15:47:43.626 [main] INFO - 130. Statement.close() returned 
+
+15:47:43.861 [main] INFO - 131. Connection opened. {executed in 142ms} 
+
+15:47:43.868 [main] INFO - 131. Connection.new Connection returned 
+
+15:47:43.887 [main] INFO - 131. Connection closed. {executed in 0ms} 
+
+15:47:43.891 [main] INFO - 131. Connection.close() returned 
+
+15:47:44.091 [main] INFO - 132. Connection opened. {executed in 171ms} 
+
+15:47:44.091 [main] INFO - 132. Connection.new Connection returned 
+
+15:47:44.092 [main] INFO - 132. Connection closed. {executed in 0ms} 
+
+15:47:44.092 [main] INFO - 132. Connection.close() returned 
+
+15:47:44.424 [main] INFO - 133. Connection opened. {executed in 167ms} 
+
+15:47:44.425 [main] INFO - 133. Connection.new Connection returned 
+
+15:47:44.639 [main] INFO - 134. Connection opened. {executed in 166ms} 
+
+15:47:44.640 [main] INFO - 134. Connection.new Connection returned 
+
+15:47:44.641 [main] INFO - 134. Connection closed. {executed in 1ms} 
+
+15:47:44.642 [main] INFO - 134. Connection.close() returned 
+
+15:47:44.642 [main] INFO - 134. Connection closed. {executed in 0ms} 
+
+15:47:44.642 [main] INFO - 134. Connection.close() returned 
+
+15:47:44.761 [main] INFO - 135. Connection opened. {executed in 119ms} 
+
+15:47:44.762 [main] INFO - 135. Connection.new Connection returned 
+
+15:47:44.844 [main] INFO - 136. Connection opened. {executed in 82ms} 
+
+15:47:44.845 [main] INFO - 136. Connection.new Connection returned 
+
+15:47:44.845 [main] INFO - 134. Connection closed. {executed in 0ms} 
+
+15:47:44.845 [main] INFO - 134. Connection.close() returned 
+
+15:47:45.184 [main] INFO - 137. Connection opened. {executed in 175ms} 
+
+15:47:45.184 [main] INFO - 137. Connection.new Connection returned 
+
+15:47:45.184 [main] INFO - 137. Connection closed. {executed in 0ms} 
+
+15:47:45.184 [main] INFO - 137. Connection.close() returned 
+
+15:47:45.184 [main] INFO - 137. Connection closed. {executed in 0ms} 
+
+15:47:45.185 [main] INFO - 137. Connection.close() returned 
+
+15:47:45.290 [main] INFO - 138. Connection opened. {executed in 105ms} 
+
+15:47:45.290 [main] INFO - 138. Connection.new Connection returned 
+
+15:47:45.504 [main] INFO - 139. Connection opened. {executed in 165ms} 
+
+15:47:45.537 [main] INFO - 139. Connection.new Connection returned 
+
+15:47:45.545 [main] INFO - 139. Connection closed. {executed in 4ms} 
+
+15:47:45.545 [main] INFO - 139. Connection.close() returned 
+
+15:47:45.741 [main] INFO - 140. Connection opened. {executed in 179ms} 
+
+15:47:45.742 [main] INFO - 140. Connection.new Connection returned 
+
+15:47:45.743 [main] ERROR - 139. Connection.createStatement()
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:956)
+	at org.postgresql.jdbc.PgConnection.createStatement(PgConnection.java:1825)
+	at org.postgresql.jdbc.PgConnection.createStatement(PgConnection.java:486)
+	at net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy.createStatement(ConnectionSpy.java:410)
+	at demo.util.PostgresTestUtil.createTable(PostgresTestUtil.java:408)
+	at demo.state.Action$7.invoke(Action.java:140)
+	at demo.test.StateMachineTest.test_1(StateMachineTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+15:47:45.814 [main] INFO - 141. Connection opened. {executed in 69ms} 
+
+15:47:45.814 [main] INFO - 141. Connection.new Connection returned 
+
+15:47:45.996 [main] INFO - 142. Connection opened. {executed in 180ms} 
+
+15:47:46.001 [main] INFO - 142. Connection.new Connection returned 
+
+15:47:46.006 [main] INFO - 142. Statement.new Statement returned 
+
+15:47:46.012 [main] INFO - 142. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@5fdcaa40
+
+15:47:46.020 [main] INFO - 142. Connection.getAutoCommit() returned true
+
+15:47:46.037 [main] INFO - 142. DROP FUNCTION IF EXISTS test_blob(REFCURSOR, int4) CASCADE  {executed in 16 ms}
+
+15:47:46.049 [main] INFO - 142. Statement.executeUpdate(DROP FUNCTION IF EXISTS test_blob(REFCURSOR, int4) CASCADE) returned 0
+
+15:47:46.050 [main] INFO - 142. Statement.close() returned 
+
+15:47:46.058 [main] INFO - 142. Connection closed. {executed in 5ms} 
+
+15:47:46.058 [main] INFO - 142. Connection.close() returned 
+
+15:47:46.058 [main] INFO - 141. Connection closed. {executed in 0ms} 
+
+15:47:46.058 [main] INFO - 141. Connection.close() returned 
+
+15:47:46.185 [main] INFO - 143. Connection opened. {executed in 117ms} 
+
+15:47:46.189 [main] INFO - 143. Connection.new Connection returned 
+
+15:47:46.364 [main] INFO - 144. Connection opened. {executed in 175ms} 
+
+15:47:46.365 [main] INFO - 144. Connection.new Connection returned 
+
+15:47:46.368 [main] ERROR - 141. Connection.createStatement()
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:956)
+	at org.postgresql.jdbc.PgConnection.createStatement(PgConnection.java:1825)
+	at org.postgresql.jdbc.PgConnection.createStatement(PgConnection.java:486)
+	at net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy.createStatement(ConnectionSpy.java:410)
+	at demo.util.PostgresTestUtil.dropObject(PostgresTestUtil.java:649)
+	at demo.util.PostgresTestUtil.dropFunction(PostgresTestUtil.java:644)
+	at demo.state.Action$12.invoke(Action.java:222)
+	at demo.test.StateMachineTest.test_1(StateMachineTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+15:47:46.498 [main] INFO - 145. Connection opened. {executed in 126ms} 
+
+15:47:46.499 [main] INFO - 145. Connection.new Connection returned 
+
+15:47:46.599 [main] INFO - 146. Connection opened. {executed in 99ms} 
+
+15:47:46.599 [main] INFO - 146. Connection.new Connection returned 
+
+15:47:46.600 [main] INFO - 146. Statement.new Statement returned 
+
+15:47:46.600 [main] INFO - 146. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@5e0826e7
+
+15:47:46.605 [main] ERROR - 146. Statement.executeUpdate(CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN  SELECT * FROM pg_catalog.pg_tables; END; $$ LANGUAGE plpgsql; LANGUAGE SQL) FAILED! CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN SELECT * FROM pg_catalog.pg_tables; 
+END; $$ LANGUAGE plpgsql; LANGUAGE SQL  {FAILED after 5 ms}
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:268)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.executeUpdate(StatementSpy.java:767)
+	at demo.util.PostgresTestUtil.createFunction(PostgresTestUtil.java:633)
+	at demo.state.Action$11.invoke(Action.java:206)
+	at demo.test.StateMachineTest.test_1(StateMachineTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+15:47:46.606 [main] INFO - 146. Statement.close() returned 
+
+15:47:46.801 [main] INFO - 147. Connection opened. {executed in 192ms} 
+
+15:47:46.801 [main] INFO - 147. Connection.new Connection returned 
+
+15:47:46.805 [main] INFO - 147. Connection closed. {executed in 4ms} 
+
+15:47:46.805 [main] INFO - 147. Connection.close() returned 
+
+15:47:46.900 [main] INFO - 148. Connection opened. {executed in 48ms} 
+
+15:47:46.900 [main] INFO - 148. Connection.new Connection returned 
+
+15:47:46.900 [main] INFO - 148. Statement.new Statement returned 
+
+15:47:46.901 [main] INFO - 148. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@6e20b53a
+
+15:47:46.901 [main] INFO - 148. Statement.new Statement returned 
+
+15:47:46.901 [main] INFO - 148. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@71809907
+
+15:47:46.901 [main] INFO - 148. Connection.getAutoCommit() returned true
+
+15:47:46.949 [main] INFO - 148. DROP SCHEMA IF EXISTS schema_0 CASCADE  {executed in 47 ms}
+
+15:47:46.949 [main] INFO - 148. Statement.executeUpdate(DROP SCHEMA IF EXISTS schema_0 CASCADE) returned 0
+
+15:47:46.949 [main] INFO - 148. Statement.close() returned 
+
+15:47:46.965 [main] INFO - 148. CREATE SCHEMA schema_0  {executed in 16 ms}
+
+15:47:46.966 [main] INFO - 148. Statement.executeUpdate(CREATE SCHEMA schema_0) returned 0
+
+15:47:46.967 [main] INFO - 148. Statement.close() returned 
+
+15:47:46.967 [main] INFO - 148. Statement.new Statement returned 
+
+15:47:46.968 [main] INFO - 148. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@3ce1e309
+
+15:47:46.968 [main] INFO - 148. Connection.getAutoCommit() returned true
+
+15:47:46.970 [main] INFO - 148. DROP SCHEMA IF EXISTS schema_0 CASCADE  {executed in 2 ms}
+
+15:47:46.970 [main] INFO - 148. Statement.executeUpdate(DROP SCHEMA IF EXISTS schema_0 CASCADE) returned 0
+
+15:47:46.970 [main] INFO - 148. Statement.close() returned 
+
+15:47:46.977 [main] INFO - 148. Connection closed. {executed in 7ms} 
+
+15:47:46.977 [main] INFO - 148. Connection.close() returned 
+
+15:47:47.057 [main] INFO - 149. Connection opened. {executed in 79ms} 
+
+15:47:47.066 [main] INFO - 149. Connection.new Connection returned 
+
+15:47:47.273 [main] INFO - 150. Connection opened. {executed in 149ms} 
+
+15:47:47.273 [main] INFO - 150. Connection.new Connection returned 
+
+15:47:47.339 [main] INFO - 151. Connection opened. {executed in 62ms} 
+
+15:47:47.339 [main] INFO - 151. Connection.new Connection returned 
+
+15:47:47.340 [main] INFO - 151. Connection closed. {executed in 0ms} 
+
+15:47:47.340 [main] INFO - 151. Connection.close() returned 
+
+15:47:47.501 [main] INFO - 152. Connection opened. {executed in 79ms} 
+
+15:47:47.505 [main] INFO - 152. Connection.new Connection returned 
+
+15:47:47.508 [main] INFO - 152. Connection closed. {executed in 3ms} 
+
+15:47:47.512 [main] INFO - 152. Connection.close() returned 
+
+15:47:47.516 [main] INFO - 152. Connection closed. {executed in 0ms} 
+
+15:47:47.516 [main] INFO - 152. Connection.close() returned 
+
+15:47:47.612 [main] INFO - 153. Connection opened. {executed in 95ms} 
+
+15:47:47.612 [main] INFO - 153. Connection.new Connection returned 
+
+15:47:47.641 [main] INFO - 154. Connection opened. {executed in 28ms} 
+
+15:47:47.642 [main] INFO - 154. Connection.new Connection returned 
+
+15:47:47.672 [main] INFO - 155. Connection opened. {executed in 30ms} 
+
+15:47:47.672 [main] INFO - 155. Connection.new Connection returned 
+
+15:47:47.835 [main] INFO - 156. Connection opened. {executed in 162ms} 
+
+15:47:47.850 [main] INFO - 156. Connection.new Connection returned 
+
+15:47:47.925 [main] INFO - 157. Connection opened. {executed in 69ms} 
+
+15:47:47.925 [main] INFO - 157. Connection.new Connection returned 
+
+15:47:47.932 [main] INFO - 156. Connection closed. {executed in 6ms} 
+
+15:47:47.932 [main] INFO - 156. Connection.close() returned 
+
+15:47:47.950 [main] INFO - 158. Connection opened. {executed in 17ms} 
+
+15:47:47.951 [main] INFO - 158. Connection.new Connection returned 
+
+15:47:47.951 [main] INFO - 158. Connection closed. {executed in 0ms} 
+
+15:47:47.952 [main] INFO - 158. Connection.close() returned 
+
+15:47:48.051 [main] INFO - 159. Connection opened. {executed in 99ms} 
+
+15:47:48.052 [main] INFO - 159. Connection.new Connection returned 
+
+15:47:48.076 [main] INFO - 160. Connection opened. {executed in 23ms} 
+
+15:47:48.076 [main] INFO - 160. Connection.new Connection returned 
+
+15:47:48.119 [main] INFO - 161. Connection opened. {executed in 42ms} 
+
+15:47:48.120 [main] INFO - 161. Connection.new Connection returned 
+
+15:47:48.275 [main] INFO - 162. Connection opened. {executed in 103ms} 
+
+15:47:48.276 [main] INFO - 162. Connection.new Connection returned 
+
+15:47:48.297 [main] INFO - 162. Connection closed. {executed in 19ms} 
+
+15:47:48.307 [main] INFO - 162. Connection.close() returned 
+
+15:47:48.308 [main] INFO - 162. Connection closed. {executed in 0ms} 
+
+15:47:48.308 [main] INFO - 162. Connection.close() returned 
+
+15:47:48.361 [main] INFO - 163. Connection opened. {executed in 53ms} 
+
+15:47:48.362 [main] INFO - 163. Connection.new Connection returned 
+
+15:47:48.398 [main] INFO - 164. Connection opened. {executed in 30ms} 
+
+15:47:48.398 [main] INFO - 164. Connection.new Connection returned 
+
+15:47:48.509 [main] INFO - 165. Connection opened. {executed in 110ms} 
+
+15:47:48.513 [main] INFO - 165. Connection.new Connection returned 
+
+15:47:48.526 [main] INFO - 165. Connection closed. {executed in 5ms} 
+
+15:47:48.531 [main] INFO - 165. Connection.close() returned 
+
+15:47:48.531 [main] INFO - 165. Connection closed. {executed in 0ms} 
+
+15:47:48.531 [main] INFO - 165. Connection.close() returned 
+
+15:47:48.531 [main] INFO - 165. Connection closed. {executed in 0ms} 
+
+15:47:48.531 [main] INFO - 165. Connection.close() returned 
+
+15:47:48.542 [main] INFO - 165. Connection closed. {executed in 0ms} 
+
+15:47:48.546 [main] INFO - 165. Connection.close() returned 
+
+15:47:48.619 [main] INFO - 166. Connection opened. {executed in 72ms} 
+
+15:47:48.619 [main] INFO - 166. Connection.new Connection returned 
+
+15:47:48.689 [main] INFO - 167. Connection opened. {executed in 69ms} 
+
+15:47:48.689 [main] INFO - 167. Connection.new Connection returned 
+
+15:47:48.689 [main] INFO - 167. Statement.new Statement returned 
+
+15:47:48.689 [main] INFO - 167. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@47af7f3d
+
+15:47:48.693 [main] ERROR - 167. Statement.executeUpdate(CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN  SELECT * FROM pg_catalog.pg_tables; END; $$ LANGUAGE plpgsql; LANGUAGE SQL) FAILED! CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN SELECT * FROM pg_catalog.pg_tables; 
+END; $$ LANGUAGE plpgsql; LANGUAGE SQL  {FAILED after 4 ms}
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:268)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.executeUpdate(StatementSpy.java:767)
+	at demo.util.PostgresTestUtil.createFunction(PostgresTestUtil.java:633)
+	at demo.state.Action$11.invoke(Action.java:206)
+	at demo.test.StateMachineTest.test_1(StateMachineTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+15:47:48.694 [main] INFO - 167. Statement.close() returned 
+
+15:47:48.744 [main] INFO - 168. Connection opened. {executed in 49ms} 
+
+15:47:48.744 [main] INFO - 168. Connection.new Connection returned 
+
+15:47:48.744 [main] INFO - 168. Statement.new Statement returned 
+
+15:47:48.744 [main] INFO - 168. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@3bb9a3ff
+
+15:47:48.746 [main] ERROR - 168. Statement.executeUpdate(CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN  SELECT * FROM pg_catalog.pg_tables; END; $$ LANGUAGE plpgsql; LANGUAGE SQL) FAILED! CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN SELECT * FROM pg_catalog.pg_tables; 
+END; $$ LANGUAGE plpgsql; LANGUAGE SQL  {FAILED after 2 ms}
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:268)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.executeUpdate(StatementSpy.java:767)
+	at demo.util.PostgresTestUtil.createFunction(PostgresTestUtil.java:633)
+	at demo.state.Action$11.invoke(Action.java:206)
+	at demo.test.StateMachineTest.test_1(StateMachineTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+15:47:48.747 [main] INFO - 168. Statement.close() returned 
+
+15:47:48.814 [main] INFO - 169. Connection opened. {executed in 66ms} 
+
+15:47:48.814 [main] INFO - 169. Connection.new Connection returned 
+
+15:47:48.992 [main] INFO - 170. Connection opened. {executed in 110ms} 
+
+15:47:48.993 [main] INFO - 170. Connection.new Connection returned 
+
+15:47:49.419 [main] INFO - 171. Connection opened. {executed in 91ms} 
+
+15:47:49.419 [main] INFO - 171. Connection.new Connection returned 
+
+15:47:49.420 [main] INFO - 171. Connection closed. {executed in 1ms} 
+
+15:47:49.420 [main] INFO - 171. Connection.close() returned 
+
+15:47:49.420 [main] INFO - 171. Connection closed. {executed in 0ms} 
+
+15:47:49.420 [main] INFO - 171. Connection.close() returned 
+
+15:47:49.420 [main] INFO - 171. Connection closed. {executed in 0ms} 
+
+15:47:49.420 [main] INFO - 171. Connection.close() returned 
+
+15:47:49.453 [main] INFO - 172. Connection opened. {executed in 32ms} 
+
+15:47:49.456 [main] INFO - 172. Connection.new Connection returned 
+
+15:47:49.461 [main] INFO - 172. Statement.new Statement returned 
+
+15:47:49.461 [main] INFO - 172. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@5af3afd9
+
+15:47:49.489 [main] ERROR - 172. Statement.executeUpdate(CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN  SELECT * FROM pg_catalog.pg_tables; END; $$ LANGUAGE plpgsql; LANGUAGE SQL) FAILED! CREATE FUNCTION test_blob(REFCURSOR, int4) RETURN BOOLEAN AS $$ BEGIN SELECT * FROM pg_catalog.pg_tables; 
+END; $$ LANGUAGE plpgsql; LANGUAGE SQL  {FAILED after 28 ms}
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "AS"
+  Position: 59
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:268)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.executeUpdate(StatementSpy.java:767)
+	at demo.util.PostgresTestUtil.createFunction(PostgresTestUtil.java:633)
+	at demo.state.Action$11.invoke(Action.java:206)
+	at demo.test.StateMachineTest.test_1(StateMachineTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+15:47:49.493 [main] INFO - 172. Statement.close() returned 
+
