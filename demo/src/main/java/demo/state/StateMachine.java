@@ -3,19 +3,35 @@ package demo.state;
 import demo.Randomly;
 
 public final class StateMachine {
-    private static State currentState = State.INTIAL;
+    private static State currentState = State.INITIAL;
+    private static Action currentAction = null;
+    
+    private Exception exception = null;
 
     public State getCurrentState() {
         return currentState;
+    }
+
+    public Action getCurrentAction() {
+        return currentAction;
+    }
+
+    public Exception getException() {
+        return exception;
+    }
+
+    public void setException(Exception exception) {
+        this.exception = exception;
     }
 
     public State nextState() {
         return currentState = currentState.nextState();
     }
 
-    public Action action() {
+    public Action selectAction() {
         Action[] candidates = currentState.actionCandidates();
-        return candidates != null ? Randomly.fromOptions(candidates) : null;
+        currentAction = candidates != null ? Randomly.fromOptions(candidates) : null;
+        return currentAction;
     }
 
     public void showActionCandidates() {
@@ -35,5 +51,10 @@ public final class StateMachine {
 
     public void advanceState(State targetState) {
         StateMachine.currentState = targetState;
+    }
+
+    public void reset() {
+        currentState = State.INITIAL;
+        currentAction = null;
     }
 }

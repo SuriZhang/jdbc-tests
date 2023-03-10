@@ -25,9 +25,11 @@ public class Schema {
 
         public String columnsToString() {
             StringBuilder sb = new StringBuilder();
-            for (Column column : this.columns) {
-                sb.append(column.toString());
-                sb.append(", ");
+            for (int i = 0; i < this.columns.size(); i++) {
+                sb.append(columns.get(i).toString());
+                if (i != this.columns.size() - 1) {
+                    sb.append(", ");
+                }
             }
             return sb.toString();
         }
@@ -65,62 +67,75 @@ public class Schema {
     }
 
     public static String generateTableName(Connection connection) {
-        List<String> tableNames = GlobalInfo.getTables(connection).stream().map(t -> t.getName())
-                .collect(Collectors.toList());
         int i = 0;
         if (Randomly.getBooleanWithRatherLowProbability()) {
             i = (int) Randomly.getNotCachedInteger(0, 100);
         }
-        do {
-            String tableName = String.format("table_%d", i++);
-            if (tableNames.stream().noneMatch(t -> t.equalsIgnoreCase(tableName))) {
-                return tableName;
-            }
-        } while (true);
+        List<Table> tables = GlobalInfo.getTables(connection);
+        if (tables == null) {
+            return String.format("table_%d", i);
+        } else {
+            List<String> tableNames = tables.stream().map(t -> t.getName())
+                    .collect(Collectors.toList());
+            do {
+                String tableName = String.format("table_%d", i++);
 
+                if (tableNames.isEmpty()
+                        || tableNames.stream().noneMatch(t -> t.equalsIgnoreCase(tableName))) {
+                    return tableName;
+                }
+            } while (true);
+        }
     }
 
-    public static String generateColumnName(Connection connection, String tableName) {
-        List<String> columnNames = GlobalInfo.getTables(connection).stream()
-                .filter(t -> t.getName().equalsIgnoreCase(tableName)).flatMap(t -> t.getColumns().stream())
+    public static String generateColumnName(String tableName, List<Column> columns) {
+        List<String> columnNames = columns.stream()
                 .map(c -> c.getName()).collect(Collectors.toList());
         int i = 0;
         if (Randomly.getBooleanWithRatherLowProbability()) {
             i = (int) Randomly.getNotCachedInteger(0, 100);
         }
+        
         do {
             String columnName = String.format("column_%d", i++);
-            if (columnNames.stream().noneMatch(c -> c.equalsIgnoreCase(columnName))) {
-                return columnName;
+
+            if (columnNames.isEmpty()
+                    || columnNames.stream().noneMatch(c -> c.equalsIgnoreCase(columnName))) {
+                
+                        return columnName;
             }
         } while (true);
     }
 
-    public static Column generateColumn(Connection connection, String tableName) {
-        String columnName = generateColumnName(connection, tableName);
+    public static Column generateColumn(String tableName, List<Column> columns) {
+        String columnName = generateColumnName(tableName, columns);
         DataType type = DataType.getRandomDataType();
         return new Column(columnName, type);
     }
 
     public static Table generateTable(Connection connection) {
         String tableName = generateTableName(connection);
-        Table table = new Table(tableName, new ArrayList<>());
+        List<Column> columns = new ArrayList<>();
+        Table table = new Table(tableName, columns);
         int numColumns = Randomly.smallNumber() + 1;
         for (int i = 0; i < numColumns; i++) {
-            table.addColumn(generateColumn(connection, tableName));
+            table.addColumn(generateColumn(tableName, columns));
         }
+        
         return table;
     }
 
     public static String generateSchemaName(Connection connection) {
         List<String> schemaNames = GlobalInfo.getSchemas(connection);
+
         int i = 0;
         if (Randomly.getBooleanWithRatherLowProbability()) {
             i = (int) Randomly.getNotCachedInteger(0, 100);
         }
         do {
             String schemaName = String.format("schema_%d", i++);
-            if (schemaNames.stream().noneMatch(s -> s.equalsIgnoreCase(schemaName))) {
+            if (schemaNames == null || schemaNames.isEmpty()
+                    || schemaNames.stream().noneMatch(s -> s.equalsIgnoreCase(schemaName))) {
                 return schemaName;
             }
         } while (true);

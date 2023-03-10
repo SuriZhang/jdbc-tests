@@ -36,9 +36,21 @@ public class GlobalInfo {
     private static Map<Connection, List<String>> schemas = new HashMap<>();
 
     public static TestUtil setTestDbms(TestDbms testDbms) {
+        GlobalInfo.stateMachine.reset();
+        resetAll();
         GlobalInfo.testDbms = testDbms;
         GlobalInfo.testUtil = TestUtilFactory.create(testDbms);
+
         return GlobalInfo.testUtil;
+    }
+
+    static void resetAll() {
+        basicConnections.clear();
+        replicationConnections.clear();
+        readOnlyConnections.clear();
+        privilegedConnection = null;
+        tables.clear();
+        schemas.clear();
     }
 
     @Nullable
@@ -68,9 +80,15 @@ public class GlobalInfo {
     @Nullable
     public static Connection getAnyConnectionForReplication() {
         List<Connection> connections = allConnections();
+        if (connections == null) {
+            return null;
+        }
         // remove replication connections from the list
         for (List<Connection> cons : replicationConnections.values()) {
             connections.removeAll(cons);
+        }
+        if (connections.isEmpty()) {
+            return null;
         }
 
         Connection[] cons = new Connection[connections.size()];
@@ -113,7 +131,7 @@ public class GlobalInfo {
 
     @Nullable
     public static List<Connection> getBasicConnections() {
-        return basicConnections.isEmpty()   ? null : basicConnections;
+        return basicConnections.isEmpty() ? null : basicConnections;
     }
 
     @Nullable
